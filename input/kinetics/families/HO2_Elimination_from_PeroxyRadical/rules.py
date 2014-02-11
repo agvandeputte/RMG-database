@@ -370,7 +370,7 @@ u"""
 
 entry(
     index = 845,
-    label = "CH3CH(OO)CHCH2",
+    label = "R2OO_2H_HCd",
     group1 = 
 """
 1  *1 C 0 {2,S} {5,S} {6,S} {7,S}
@@ -381,11 +381,8 @@ entry(
 6     H 0 {1,S}
 7     H 0 {1,S}
 8     H 0 {2,S}
-9     C 0 {2,S} {10,S} {11,D}
-10    H 0 {9,S}
-11    C 0 {9,D} {12,S} {13,S}
-12    H 0 {11,S}
-13    H 0 {11,S}
+9     C 0 {2,S} {10,D}
+10    C 0 {9,D}
 """,
     kinetics = ArrheniusEP(
         A = (825300, 's^-1', '*|/', 5),
@@ -420,7 +417,7 @@ k(T) = 2.476e+06 * (T/1K)^1.829 * exp(-24.247 kcal/mol / RT) cm3/mol/s.  MRH div
 three to account for the reaction path degeneracy, yielding the value stored in the rateLibrary.
 """,
     history = [
-        ("Tue Jul 30 14:45:06 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
@@ -463,24 +460,22 @@ TS (and it is certainly better than leaving RMG to estimate via "Average of Aver
 """,
     history = [
         ("Tue Jul 30 14:45:06 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
     index = 847,
-    label = "HOCH[OO]CH3",
+    label = "R2OO_O_HNd",
     group1 = 
 """
-1  *1 O 0 {2,S} {5,S}
-2  *2 C 0 {1,S} {3,S} {6,S} {7,S}
-3  *3 O 0 {2,S} {4,S}
-4  *4 O 1 {3,S}
-5  *5 H 0 {1,S}
-6     H 0 {2,S}
-7     C 0 {2,S} {8,S} {9,S} {10,S}
-8     H 0 {7,S}
-9     H 0 {7,S}
-10    H 0 {7,S}
+1 *1 O 0 {2,S} {5,S}
+2 *2 C 0 {1,S} {3,S} {6,S} {7,S}
+3 *3 O 0 {2,S} {4,S}
+4 *4 O 1 {3,S}
+5 *5 H 0 {1,S}
+6    H 0 {2,S}
+7    C 0 {2,S}
 """,
     kinetics = ArrheniusEP(
         A = (68130000000.0, 's^-1', '*|/', 10),
@@ -531,22 +526,20 @@ The k(T) was calculated from 600 - 2000 K, in 200 K intervals, and the fitted Ar
 k(T) = 6.813e+10 * (T/1K)^0.493 * exp(-11.894 kcal/mol / RT) cm3/mol/s.
 """,
     history = [
-        ("Tue Jul 30 14:45:06 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
     index = 848,
-    label = "OCOO",
+    label = "R2OO_O",
     group1 = 
 """
 1 *1 O 0 {2,S} {5,S}
-2 *2 C 0 {1,S} {3,S} {6,S} {7,S}
+2 *2 C 0 {1,S} {3,S}
 3 *3 O 0 {2,S} {4,S}
 4 *4 O 1 {3,S}
 5 *5 H 0 {1,S}
-6    R 0 {2,S}
-7    R 0 {2,S}
 """,
     kinetics = ArrheniusEP(
         A = (6380000000000.0, 's^-1', '*|/', 5),
@@ -568,7 +561,7 @@ In the event RMG finds any H-O-C-O-O* connection, the kinetics used for direct
 HO2 elimination will be those of CH3-CH(OO)-OH => CH3CHO + HO2.
 """,
     history = [
-        ("Tue Jul 30 14:45:06 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
@@ -696,7 +689,7 @@ entry(
 9    {Cs,O} 0 {2,S}
 """,
     kinetics = ArrheniusEP(
-        A = (36600000000.0, 's^-1'),
+        A = (36.6, 's^-1'),
         n = 0.62,
         alpha = 0,
         E0 = (30.1, 'kcal/mol'),
@@ -713,6 +706,7 @@ u"""
 """,
     history = [
         ("Tue Jul 30 14:45:06 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -897,326 +891,36 @@ u"""
 )
 
 entry(
-    index = 849,
-    label = "R2OO_2H_2H",
+    index = 869,
+    label = "R2OO_0H_2H",
     group1 = 
 """
-1 *1 C 0 {2,S} {5,S} {6,S} {7,S}
-2 *2 C 0 {1,S} {3,S} {8,S} {9,S}
-3 *3 O 0 {2,S} {4,S}
-4 *4 O 1 {3,S}
-5 *5 H 0 {1,S}
-6    H 0 {1,S}
-7    H 0 {1,S}
-8    H 0 {2,S}
-9    H 0 {2,S}
+1 *1 Cd 0 {2,S} {5,S}
+2 *2 C  0 {1,S} {3,S} {6,S} {7,S}
+3 *3 O  0 {2,S} {4,S}
+4 *4 O  1 {3,S}
+5 *5 H  0 {1,S}
+6    H  0 {2,S}
+7    H  0 {2,S}
 """,
     kinetics = ArrheniusEP(
-        A = (4840000.0, 's^-1'),
-        n = 1.67,
+        A = (3630000000.0, 's^-1'),
+        n = 1.11,
         alpha = 0,
-        E0 = (29.7, 'kcal/mol'),
+        E0 = (42.7, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     reference = None,
     referenceType = "",
-    rank = 2,
-    shortDesc = u"""pp, CBS-QB3 calculations, with hindered rotor treatment.""",
+    rank = 4,
+    shortDesc = u"""BMK/cbsb7, HO""",
     longDesc = 
 u"""
 
 """,
     history = [
-        ("Tue Jul 30 14:45:06 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
-    ],
-)
-
-entry(
-    index = 850,
-    label = "R2OO_2H_HNd",
-    group1 = 
-"""
-1 *1 C      0 {2,S} {5,S} {6,S} {7,S}
-2 *2 C      0 {1,S} {3,S} {8,S} {9,S}
-3 *3 O      0 {2,S} {4,S}
-4 *4 O      1 {3,S}
-5 *5 H      0 {1,S}
-6    H      0 {1,S}
-7    H      0 {1,S}
-8    H      0 {2,S}
-9    {Cs,O} 0 {2,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (136000000.0, 's^-1'),
-        n = 1.28,
-        alpha = 0,
-        E0 = (30, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    reference = None,
-    referenceType = "",
-    rank = 2,
-    shortDesc = u"""sp, CBS-QB3 calculations, with hindered rotor treatment.""",
-    longDesc = 
-u"""
-
-""",
-    history = [
-        ("Tue Jul 30 14:45:06 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
-    ],
-)
-
-entry(
-    index = 851,
-    label = "R2OO_HNd_2H",
-    group1 = 
-"""
-1 *1 C      0 {2,S} {5,S} {6,S} {7,S}
-2 *2 C      0 {1,S} {3,S} {8,S} {9,S}
-3 *3 O      0 {2,S} {4,S}
-4 *4 O      1 {3,S}
-5 *5 H      0 {1,S}
-6    H      0 {1,S}
-7    {Cs,O} 0 {1,S}
-8    H      0 {2,S}
-9    H      0 {2,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (208000000.0, 's^-1'),
-        n = 1.25,
-        alpha = 0,
-        E0 = (29.6, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    reference = None,
-    referenceType = "",
-    rank = 2,
-    shortDesc = u"""ps, CBS-QB3 calculations, with hindered rotor treatment.""",
-    longDesc = 
-u"""
-
-""",
-    history = [
-        ("Tue Jul 30 14:45:06 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
-    ],
-)
-
-entry(
-    index = 852,
-    label = "R2OO_2H_NdNd",
-    group1 = 
-"""
-1 *1 C      0 {2,S} {5,S} {6,S} {7,S}
-2 *2 C      0 {1,S} {3,S} {8,S} {9,S}
-3 *3 O      0 {2,S} {4,S}
-4 *4 O      1 {3,S}
-5 *5 H      0 {1,S}
-6    H      0 {1,S}
-7    H      0 {1,S}
-8    {Cs,O} 0 {2,S}
-9    {Cs,O} 0 {2,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (36600000000.0, 's^-1'),
-        n = 0.62,
-        alpha = 0,
-        E0 = (30.1, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    reference = None,
-    referenceType = "",
-    rank = 2,
-    shortDesc = u"""tp, CBS-QB3 calculations, with hindered rotor treatment.""",
-    longDesc = 
-u"""
-
-""",
-    history = [
-        ("Tue Jul 30 14:45:06 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
-    ],
-)
-
-entry(
-    index = 853,
-    label = "R2OO_NdNd_2H",
-    group1 = 
-"""
-1 *1 C      0 {2,S} {5,S} {6,S} {7,S}
-2 *2 C      0 {1,S} {3,S} {8,S} {9,S}
-3 *3 O      0 {2,S} {4,S}
-4 *4 O      1 {3,S}
-5 *5 H      0 {1,S}
-6    {Cs,O} 0 {1,S}
-7    {Cs,O} 0 {1,S}
-8    H      0 {2,S}
-9    H      0 {2,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (194000000.0, 's^-1'),
-        n = 1.27,
-        alpha = 0,
-        E0 = (29.6, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    reference = None,
-    referenceType = "",
-    rank = 2,
-    shortDesc = u"""pt, CBS-QB3 calculations, with hindered rotor treatment.""",
-    longDesc = 
-u"""
-
-""",
-    history = [
-        ("Tue Jul 30 14:45:06 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
-    ],
-)
-
-entry(
-    index = 855,
-    label = "R2OO_HNd_HNd",
-    group1 = 
-"""
-1 *1 C      0 {2,S} {5,S} {6,S} {7,S}
-2 *2 C      0 {1,S} {3,S} {8,S} {9,S}
-3 *3 O      0 {2,S} {4,S}
-4 *4 O      1 {3,S}
-5 *5 H      0 {1,S}
-6    H      0 {1,S}
-7    {Cs,O} 0 {1,S}
-8    H      0 {2,S}
-9    {Cs,O} 0 {2,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (108700000000.0, 's^-1'),
-        n = 0.8,
-        alpha = 0,
-        E0 = (29.9, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    reference = None,
-    referenceType = "",
-    rank = 2,
-    shortDesc = u"""ss ,Multiplied 1.5 to trans rate coefficient , CBS-QB3 calculations, with hindered rotor treatment.""",
-    longDesc = 
-u"""
-
-""",
-    history = [
-        ("Tue Jul 30 14:45:06 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
-    ],
-)
-
-entry(
-    index = 856,
-    label = "R2OO_NdNd_HNd",
-    group1 = 
-"""
-1 *1 C      0 {2,S} {5,S} {6,S} {7,S}
-2 *2 C      0 {1,S} {3,S} {8,S} {9,S}
-3 *3 O      0 {2,S} {4,S}
-4 *4 O      1 {3,S}
-5 *5 H      0 {1,S}
-6    {Cs,O} 0 {1,S}
-7    {Cs,O} 0 {1,S}
-8    H      0 {2,S}
-9    {Cs,O} 0 {2,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (35000000000.0, 's^-1'),
-        n = 0.71,
-        alpha = 0,
-        E0 = (30.1, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    reference = None,
-    referenceType = "",
-    rank = 2,
-    shortDesc = u"""st, CBS-QB3 calculations, with hindered rotor treatment.""",
-    longDesc = 
-u"""
-
-""",
-    history = [
-        ("Tue Jul 30 14:45:06 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
-    ],
-)
-
-entry(
-    index = 857,
-    label = "R2OO_HNd_NdNd",
-    group1 = 
-"""
-1 *1 C      0 {2,S} {5,S} {6,S} {7,S}
-2 *2 C      0 {1,S} {3,S} {8,S} {9,S}
-3 *3 O      0 {2,S} {4,S}
-4 *4 O      1 {3,S}
-5 *5 H      0 {1,S}
-6    H      0 {1,S}
-7    {Cs,O} 0 {1,S}
-8    {Cs,O} 0 {2,S}
-9    {Cs,O} 0 {2,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (56200000000.0, 's^-1'),
-        n = 0.58,
-        alpha = 0,
-        E0 = (29.6, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    reference = None,
-    referenceType = "",
-    rank = 2,
-    shortDesc = u"""ts, CBS-QB3 calculations, with hindered rotor treatment.""",
-    longDesc = 
-u"""
-
-""",
-    history = [
-        ("Tue Jul 30 14:45:06 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
-    ],
-)
-
-entry(
-    index = 858,
-    label = "R2OO_NdNd_NdNd",
-    group1 = 
-"""
-1 *1 C      0 {2,S} {5,S} {6,S} {7,S}
-2 *2 C      0 {1,S} {3,S} {8,S} {9,S}
-3 *3 O      0 {2,S} {4,S}
-4 *4 O      1 {3,S}
-5 *5 H      0 {1,S}
-6    {Cs,O} 0 {1,S}
-7    {Cs,O} 0 {1,S}
-8    {Cs,O} 0 {2,S}
-9    {Cs,O} 0 {2,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (6250000000000.0, 's^-1'),
-        n = 0.02,
-        alpha = 0,
-        E0 = (30.7, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    reference = None,
-    referenceType = "",
-    rank = 2,
-    shortDesc = u"""tt, CBS-QB3 calculations, with hindered rotor treatment.""",
-    longDesc = 
-u"""
-
-""",
-    history = [
-        ("Tue Jul 30 14:45:06 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 

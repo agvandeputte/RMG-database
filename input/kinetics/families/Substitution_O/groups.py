@@ -36,7 +36,7 @@ u"""
 entry(
     index = 2,
     label = "YJ",
-    group = "OR{Y_2centeradjbirad, HJ, CJ, O_rad, OJ, Y_1centerbirad, NJ}",
+    group = "OR{Y_2centeradjbirad, HJ, CJ, O_rad, OJ, Y_1centerbirad}",
     kinetics = None,
     reference = None,
     referenceType = "",
@@ -47,6 +47,7 @@ u"""
 """,
     history = [
         ("Thu Jul 25 17:51:43 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -5591,7 +5592,7 @@ entry(
     label = "Y_1centerbirad",
     group = 
 """
-1 *3 {Cs,Cd,CO,O,N} 2T
+1 *3 {Cs,Cd,O} 2T
 """,
     kinetics = None,
     reference = None,
@@ -5603,6 +5604,7 @@ u"""
 """,
     history = [
         ("Thu Jul 25 17:51:43 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -7980,11 +7982,10 @@ u"""
 
 entry(
     index = 330,
-    label = "Y_2centeradjbirad",
+    label = "OJ",
     group = 
 """
-1 *3 {Ct,Os} 1 {2,{S,T}}
-2    {Ct,Os} 1 {1,{S,T}}
+1 *3 Os 1
 """,
     kinetics = None,
     reference = None,
@@ -7996,73 +7997,12 @@ u"""
 """,
     history = [
         ("Thu Jul 25 17:51:43 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
     index = 331,
-    label = "O2b",
-    group = 
-"""
-1 *3 O 1 {2,S}
-2    O 1 {1,S}
-""",
-    kinetics = None,
-    reference = None,
-    referenceType = "",
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-    history = [
-        ("Thu Jul 25 17:51:43 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
-    ],
-)
-
-entry(
-    index = 332,
-    label = "C2b",
-    group = 
-"""
-1 *3 C 1 {2,T}
-2    C 1 {1,T}
-""",
-    kinetics = None,
-    reference = None,
-    referenceType = "",
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-    history = [
-        ("Thu Jul 25 17:51:43 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
-    ],
-)
-
-entry(
-    index = 333,
-    label = "OJ",
-    group = 
-"""
-1 *3 Os 1 
-""",
-    kinetics = None,
-    reference = None,
-    referenceType = "",
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-    history = [
-        ("Thu Jul 25 17:51:43 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
-    ],
-)
-
-entry(
-    index = 334,
     label = "OsJ",
     group = 
 """
@@ -8079,11 +8019,12 @@ u"""
 """,
     history = [
         ("Thu Jul 25 17:51:43 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 335,
+    index = 332,
     label = "OsJ-H",
     group = 
 """
@@ -8100,11 +8041,12 @@ u"""
 """,
     history = [
         ("Thu Jul 25 17:51:43 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 336,
+    index = 333,
     label = "OsJ-Cs",
     group = 
 """
@@ -8121,11 +8063,12 @@ u"""
 """,
     history = [
         ("Thu Jul 25 17:51:43 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 337,
+    index = 334,
     label = "OsJ-Os",
     group = 
 """
@@ -8142,11 +8085,12 @@ u"""
 """,
     history = [
         ("Thu Jul 25 17:51:43 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 338,
+    index = 335,
     label = "OsJ-OneDe",
     group = 
 """
@@ -8163,11 +8107,12 @@ u"""
 """,
     history = [
         ("Thu Jul 25 17:51:43 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 339,
+    index = 336,
     label = "OsJ-Ct",
     group = 
 """
@@ -8184,11 +8129,12 @@ u"""
 """,
     history = [
         ("Thu Jul 25 17:51:43 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 340,
+    index = 337,
     label = "OsJ-Cb",
     group = 
 """
@@ -8205,11 +8151,12 @@ u"""
 """,
     history = [
         ("Thu Jul 25 17:51:43 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 341,
+    index = 338,
     label = "OsJ-CO",
     group = 
 """
@@ -8226,11 +8173,12 @@ u"""
 """,
     history = [
         ("Thu Jul 25 17:51:43 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 342,
+    index = 339,
     label = "OsJ-Cd",
     group = 
 """
@@ -8248,11 +8196,12 @@ u"""
 """,
     history = [
         ("Thu Jul 25 17:51:43 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 343,
+    index = 340,
     label = "OsJ-C=O",
     group = 
 """
@@ -8270,6 +8219,73 @@ u"""
 """,
     history = [
         ("Thu Jul 25 17:51:43 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
+    ],
+)
+
+entry(
+    index = 341,
+    label = "Y_2centeradjbirad",
+    group = 
+"""
+1 *3 {Ct,Os} 1 {2,{S,T}}
+2    {Ct,Os} 1 {1,{S,T}}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Thu Jul 25 17:51:43 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
+    ],
+)
+
+entry(
+    index = 342,
+    label = "O2b",
+    group = 
+"""
+1 *3 O 1 {2,S}
+2    O 1 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Thu Jul 25 17:51:43 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
+    ],
+)
+
+entry(
+    index = 343,
+    label = "C2b",
+    group = 
+"""
+1 *3 C 1 {2,T}
+2    C 1 {1,T}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Thu Jul 25 17:51:43 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -8291,26 +8307,6 @@ u"""
 """,
     history = [
         ("Thu Jul 25 17:51:43 2013","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> imported this entry from the old RMG database."""),
-    ],
-)
-
-entry(
-    index = 350,
-    label = "NJ",
-    group = 
-"""
-1 *3 N 1
-""",
-    kinetics = None,
-    reference = None,
-    referenceType = "",
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-    history = [
-        ("Tue Nov 27 12:11:59 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
     ],
 )
 
@@ -8645,9 +8641,6 @@ L1: YJ
                 L5: CsJ-TwoDeOs
                 L5: CsJ-TwoDeOs
             L4: CsJ-ThreeDe
-    L2: Y_2centeradjbirad
-        L3: O2b
-        L3: C2b
     L2: OJ
         L3: OsJ
             L4: OsJ-H
@@ -8659,8 +8652,9 @@ L1: YJ
                 L5: OsJ-CO
                 L5: OsJ-Cd
                 L5: OsJ-C=O
-    L2: NJ
+    L2: Y_2centeradjbirad
+        L3: O2b
+        L3: C2b
 """
 )
-
 

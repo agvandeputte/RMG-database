@@ -837,35 +837,6 @@ u"""
 )
 
 entry(
-    index = 156,
-    label = "bicyclo[3.1.0]hexane-C5-3",
-    group = 
-"""
-1   Cs 0 {2,S} {3,S} {5,S} {7,S}
-2   Cs 0 {1,S} {3,S} {4,S}
-3   Cs 0 {1,S} {2,S}
-4   Cs 0 {2,S} {6,S}
-5   Cs 0 {1,S} {6,S}
-6 * Cs 1 {4,S} {5,S}
-7   H  0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-1.3,-2.36,-3.02,-3.44,-3.98,-4.36,-4.99],'cal/(mol*K)'),
-        H298 = (94.1,'kcal/mol','+|-',0.2),
-        S298 = (4.51,'cal/(mol*K)'),
-    ),
-    shortDesc = u"""Homolytic C-H and N-H bond dissociation energies of strained organic compounds Feng et al. 2004S, Cp copied from CCJC entry""",
-    longDesc = 
-u"""
-
-""",
-    history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
-    ],
-)
-
-entry(
     index = 157,
     label = "bicyclo[3.1.0]hexane-C3",
     group = 
@@ -1128,36 +1099,6 @@ u"""
 )
 
 entry(
-    index = 141,
-    label = "2-norbornyl",
-    group = 
-"""
-1   Cs 0 {3,S} {4,S} {7,S} {8,S}
-2   Cs 0 {3,S} {5,S} {6,S}
-3   Cs 0 {1,S} {2,S}
-4 * Cs 1 {1,S} {5,S}
-5   Cs 0 {2,S} {4,S}
-6   Cs 0 {2,S} {7,S}
-7   Cs 0 {1,S} {6,S}
-8   H  0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-1.3,-2.36,-3.02,-3.44,-3.98,-4.36,-4.99],'cal/(mol*K)'),
-        H298 = (105.02,'kcal/mol','+|-',0.2),
-        S298 = (4.51,'cal/(mol*K)'),
-    ),
-    shortDesc = u"""P.M. Nunes, S.G. Estacio, G.T. Lopes, B.J. Costa Cabral, R.M. Borges dos Santos, J.A. Martinho Simoes, CH Bond Dissociation Enthalpies in Norbornane. An Experimental and Computational Study, Organic Letters, 10 (2008) 1613-1616. S, Cp copied from CCJC entry""",
-    longDesc = 
-u"""
-
-""",
-    history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
-    ],
-)
-
-entry(
     index = 150,
     label = "cycloheptane",
     group = 
@@ -1184,6 +1125,37 @@ u"""
 """,
     history = [
         ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+    ],
+)
+
+entry(
+    index = 156,
+    label = "bicyclo[3.1.0]hexane-C5-3",
+    group = 
+"""
+1   Cs 0 {2,S} {3,S} {5,S} {7,S}
+2   Cs 0 {1,S} {3,S} {4,S}
+3   Cs 0 {1,S} {2,S}
+4   Cs 0 {2,S} {6,S}
+5   Cs 0 {1,S} {6,S}
+6 * Cs 1 {4,S} {5,S} {8,S}
+7   H  0 {1,S}
+8   H  0 {6,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([-1.3,-2.36,-3.02,-3.44,-3.98,-4.36,-4.99],'cal/(mol*K)'),
+        H298 = (94.1,'kcal/mol','+|-',0.2),
+        S298 = (4.51,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""Homolytic C-H and N-H bond dissociation energies of strained organic compounds Feng et al. 2004S, Cp copied from CCJC entry""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1694,6 +1666,38 @@ u"""
 """,
     history = [
         ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+    ],
+)
+
+entry(
+    index = 141,
+    label = "2-norbornyl",
+    group = 
+"""
+1   Cs 0 {3,S} {4,S} {7,S} {8,S}
+2   Cs 0 {3,S} {5,S} {6,S}
+3   Cs 0 {1,S} {2,S}
+4 * Cs 1 {1,S} {5,S} {9,S}
+5   Cs 0 {2,S} {4,S}
+6   Cs 0 {2,S} {7,S}
+7   Cs 0 {1,S} {6,S}
+8   H  0 {1,S}
+9   H  0 {4,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([-1.3,-2.36,-3.02,-3.44,-3.98,-4.36,-4.99],'cal/(mol*K)'),
+        H298 = (105.02,'kcal/mol','+|-',0.2),
+        S298 = (4.51,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""P.M. Nunes, S.G. Estacio, G.T. Lopes, B.J. Costa Cabral, R.M. Borges dos Santos, J.A. Martinho Simoes, CH Bond Dissociation Enthalpies in Norbornane. An Experimental and Computational Study, Organic Letters, 10 (2008) 1613-1616. S, Cp copied from CCJC entry""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2318,7 +2322,7 @@ u"""
 )
 
 entry(
-    index = 26,
+    index = -1,
     label = "CCJCHO",
     group = 
 """
@@ -2329,19 +2333,15 @@ entry(
 5   O  0 {2,D}
 6   H  0 {2,S}
 """,
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([-1.36,-1.57,-1.73,-1.89,-2.66,-3.11,-3.5],'cal/(mol*K)'),
-        H298 = (91.9,'kcal/mol'),
-        S298 = (-2.37,'cal/(mol*K)'),
-    ),
-    shortDesc = u"""CHEN & BOZZELLI #""",
+    thermo = None,
+    shortDesc = u"""""",
     longDesc = 
 u"""
 
 """,
     history = [
         ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -5151,13 +5151,14 @@ entry(
         H298 = (104.6,'kcal/mol'),
         S298 = (1.81,'cal/(mol*K)'),
     ),
-    shortDesc = u"""Homolytic C-H and N-H bond dissociation energies of strained organic compounds Feng et al. 2004S, Cp copied from Cds_S 194 cyclobutadiene-C1 104.6 1.81 -0.34 -1.21 -1.94 -2.52 -3.34 -3.91 -4.76 0 0 0 Homolytic C-H and N-H bond dissociation energies of strained organic compounds Feng et al. 2004S, Cp copied from Cds_S""",
+    shortDesc = u"""Homolytic C-H and N-H bond dissociation energies of strained organic compounds Feng et al. 2004S, Cp copied from Cds_S""",
     longDesc = 
 u"""
 
 """,
     history = [
         ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -5702,6 +5703,25 @@ u"""
 """,
     history = [
         ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+    ],
+)
+
+entry(
+    index = 217,
+    label = "CbOJ",
+    group = 
+"""
+1 * O  1 {2,S}
+2   Cb 0 {1,S}
+""",
+    thermo = u'RC=COJ',
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
@@ -6822,7 +6842,7 @@ entry(
     label = "RJ3",
     group = 
 """
-1 * R 3
+1 * R 3Q
 """,
     thermo = u'CJ3',
     shortDesc = u"""""",
@@ -6840,7 +6860,7 @@ entry(
     label = "CJ3",
     group = 
 """
-1 * C 3
+1 * C 3Q
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -6863,7 +6883,7 @@ entry(
     label = "SiJ3",
     group = 
 """
-1 * Si 3
+1 * Si 3Q
 """,
     thermo = u'CJ3',
     shortDesc = u"""""",
@@ -6910,7 +6930,6 @@ L1: Radical
                         L7: bicyclo[1.1.1]pentane-C2
                         L7: tricyclo[1.1.1.0(1,3)]pentane-C2
                         L7: bicyclo[3.1.0]hexane-C5-2
-                        L7: bicyclo[3.1.0]hexane-C5-3
                         L7: bicyclo[3.1.0]hexane-C3
                         L7: bicyclo[2.2.0]hexane-secondary
                         L7: bicyclo[2.1.1]hex-2-ene-C5
@@ -6920,8 +6939,8 @@ L1: Radical
                         L7: tricyclo[2.1.1.0(1,4)]hexane-C2
                         L7: tricyclo[2.1.1.0(1,4)]hexane-C5
                         L7: 7-norbornyl
-                        L7: 2-norbornyl
                         L7: cycloheptane
+                        L7: bicyclo[3.1.0]hexane-C5-3
                         L7: bicyclo[3.2.0]heptane-C5-2
                         L7: bicyclo[3.2.0]heptane-C5-3
                         L7: bicyclo[3.2.0]heptane-C5-6
@@ -6939,6 +6958,7 @@ L1: Radical
                         L7: tricyclo[3.1.1.0(1,5)]heptane-C6
                         L7: tricyclo[2.2.1.0(1,4)]heptane-C2
                         L7: tricyclo[2.2.1.0(1,4)]heptane-C7
+                        L7: 2-norbornyl
                         L7: octahydro-pentalene-C5-2
                         L7: octahydro-pentalene-C5-3
                         L7: bicyclo[4.2.0]octane-C6-2
@@ -7093,6 +7113,7 @@ L1: Radical
                 L5: CdsOJ
                     L6: RC=COJ
                     L6: OJC=O
+                L5: CbOJ
             L4: OOJ
                 L5: ROOJ
                     L6: C(=O)OOJ

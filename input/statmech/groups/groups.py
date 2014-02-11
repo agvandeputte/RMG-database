@@ -6,12 +6,12 @@ shortDesc = u""
 longDesc = u"""
 
 """
-recommended = True
+recommended = False
 
 entry(
     index = -1,
     label = "R!H",
-    group = "OR{R!Hx0, R!Hx1, R!Hx2, R!Hx3}",
+    group = "OR{R!Hx0, R!Hx1, R!Hx2}",
     statmech = None,
     shortDesc = u"""""",
     longDesc = 
@@ -20,7 +20,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -39,25 +39,15 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 1,
+    index = -1,
     label = "RsCH3",
     group = "OR{RsCH3x0, RsCH3x1, RsCH3x2}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (2750, 2850, 3),
-            (1350, 1500, 2),
-            (700, 800, 1),
-            (1000, 1100, 1),
-            (1350, 1400, 1),
-            (900, 1100, 1),
-        ],
-        symmetry = 6,
-    ),
+    statmech = None,
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -65,24 +55,15 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 2,
+    index = -1,
     label = "RdCH2",
     group = "OR{RdCH2x0, RdCH2x1, RdCH2x2}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (2950, 3100, 2),
-            (1330, 1430, 1),
-            (900, 1050, 1),
-            (1000, 1050, 1),
-            (1600, 1700, 1),
-        ],
-        symmetry = 2,
-    ),
+    statmech = None,
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -90,22 +71,15 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 3,
+    index = -1,
     label = "CtCH",
     group = "OR{CtCHx0, CtCHx1}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (750, 770, 2),
-            (3350, 3450, 1),
-            (2000, 2200, 1),
-        ],
-        symmetry = 1,
-    ),
+    statmech = None,
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -113,25 +87,15 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 4,
+    index = -1,
     label = "RsCH2sR",
     group = "OR{RsCH2sRx00, RsCH2sRx11, RsCH2sRx01, RsCH2sRx02, RsCH2sRx12, RsCH2sRx22}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (2750, 2850, 2),
-            (1425, 1450, 1),
-            (1225, 1275, 1),
-            (1270, 1340, 1),
-            (700, 800, 1),
-            (300, 400, 1),
-        ],
-        symmetry = 4,
-    ),
+    statmech = None,
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -139,25 +103,15 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 6,
+    index = -1,
     label = "Aldehyde",
     group = "OR{Aldehydex0, Aldehydex1, Aldehydex2}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (2695, 2870, 1),
-            (700, 800, 1),
-            (1380, 1410, 1),
-            (450, 500, 1),
-            (1750, 1800, 1),
-            (900, 1100, 1),
-        ],
-        symmetry = 1,
-    ),
+    statmech = None,
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -165,22 +119,15 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 8,
+    index = -1,
     label = "Ketene",
     group = "OR{Ketenex0, Ketenex1, Ketenex2}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (2110, 2130, 1),
-            (495, 530, 1),
-            (650, 925, 1),
-        ],
-        symmetry = 1,
-    ),
+    statmech = None,
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -188,21 +135,15 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 7,
+    index = -1,
     label = "Cumulene",
     group = "OR{Cumulenex00, Cumulenex01, Cumulenex11, Cumulenex02, Cumulenex12, Cumulenex22}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (540, 610, 2),
-            (1970, 2140, 1),
-        ],
-        symmetry = 2,
-    ),
+    statmech = None,
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -210,24 +151,15 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 5,
+    index = -1,
     label = "CdCHsR",
     group = "OR{CdCHsRx00, CdCHsRx01, CdCHsRx10, CdCHsRx11, CdCHsRx02, CdCHsRx20, CdCHsRx12, CdCHsRx21, CdCHsRx22}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (2995, 3025, 1),
-            (975, 1000, 1),
-            (1300, 1375, 1),
-            (400, 500, 1),
-            (1630, 1680, 1),
-        ],
-        symmetry = 1,
-    ),
+    statmech = None,
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -235,21 +167,15 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 9,
+    index = -1,
     label = "CtCsR",
     group = "OR{CtCsRx00, CtCsRx01, CtCsRx10, CtCsRx11, CtCsRx02, CtCsRx12}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (2100, 2250, 1),
-            (500, 550, 1),
-        ],
-        symmetry = 1,
-    ),
+    statmech = None,
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -257,23 +183,15 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 10,
+    index = -1,
     label = "RsCHsR2",
     group = "OR{RsCHsR2x000, RsCHsR2x111, RsCHsR2x222, RsCHsR2x001, RsCHsR2x002, RsCHsR2x110, RsCHsR2x112, RsCHsR2x220, RsCHsR2x221, RsCHsR2x012}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (1380, 1390, 2),
-            (370, 380, 2),
-            (2800, 3000, 1),
-            (430, 440, 1),
-        ],
-        symmetry = 6,
-    ),
+    statmech = None,
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -281,23 +199,15 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 11,
+    index = -1,
     label = "RdCsR2",
     group = "OR{RdCsR2x000, RdCsR2x001, RdCsR2x011, RdCsR2x002, RdCsR2x012, RdCsR2x022, RdCsR2x100, RdCsR2x101, RdCsR2x111, RdCsR2x102, RdCsR2x112, RdCsR2x122, RdCsR2x200, RdCsR2x201, RdCsR2x211, RdCsR2x202, RdCsR2x212, RdCsR2x222}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (325, 375, 1),
-            (415, 465, 1),
-            (420, 450, 1),
-            (1700, 1750, 1),
-        ],
-        symmetry = 2,
-    ),
+    statmech = None,
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -305,23 +215,15 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 12,
+    index = -1,
     label = "Ketone",
     group = "OR{Ketonex00, Ketonex01, Ketonex11, Ketonex02, Ketonex12, Ketonex22}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (365, 385, 1),
-            (505, 600, 1),
-            (445, 480, 1),
-            (1700, 1720, 1),
-        ],
-        symmetry = 2,
-    ),
+    statmech = None,
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -329,22 +231,15 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 13,
+    index = -1,
     label = "RsCsR3",
     group = "OR{RsCsR3x0000, RsCsR3x1111, RsCsR3x2222, RsCsR3x0001, RsCsR3x0002, RsCsR3x1110, RsCsR3x1112, RsCsR3x2220, RsCsR3x2221, RsCsR3x0011, RsCsR3x0022, RsCsR3x1122, RsCsR3x0012, RsCsR3x0112, RsCsR3x0122}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (350, 400, 2),
-            (1190, 1240, 2),
-            (400, 500, 1),
-        ],
-        symmetry = 12,
-    ),
+    statmech = None,
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -352,7 +247,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -371,24 +266,15 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 14,
+    index = -1,
     label = "RsCH2r",
     group = "OR{RsCH2rx0, RsCH2rx1, RsCH2rx2}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (3000, 3100, 2),
-            (415, 465, 1),
-            (780, 850, 1),
-            (1435, 1475, 1),
-            (900, 1100, 1),
-        ],
-        symmetry = 2,
-    ),
+    statmech = None,
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -396,23 +282,15 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 15,
+    index = -1,
     label = "RdCHr",
     group = "OR{RdCHrx0, RdCHrx1, RdCHrx2}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (3115, 3125, 1),
-            (620, 680, 1),
-            (785, 800, 1),
-            (1600, 1700, 1),
-        ],
-        symmetry = 1,
-    ),
+    statmech = None,
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -420,7 +298,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -436,23 +314,15 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 16,
+    index = -1,
     label = "RsCHrsR",
     group = "OR{RsCHrsRx00, RsCHrsRx01, RsCHrsRx11, RsCHrsRx02, RsCHrsRx12, RsCHrsRx22}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (3000, 3050, 1),
-            (390, 425, 1),
-            (1340, 1360, 1),
-            (335, 370, 1),
-        ],
-        symmetry = 2,
-    ),
+    statmech = None,
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -460,22 +330,15 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 18,
+    index = -1,
     label = "OdCrsR",
     group = "OR{OdCrsRx0, OdCrsRx1, OdCrsRx2}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (1850, 1860, 1),
-            (440, 470, 1),
-            (900, 1000, 1),
-        ],
-        symmetry = 1,
-    ),
+    statmech = None,
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -483,21 +346,15 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 17,
+    index = -1,
     label = "CdCrsR",
     group = "OR{CdCrsRx00, CdCrsRx01, CdCrsRx10, CdCrsRx11, CdCrsRx02, CdCrsRx20, CdCrsRx12, CdCrsRx21, CdCrsRx22}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (1670, 1700, 1),
-            (300, 440, 1),
-        ],
-        symmetry = 1,
-    ),
+    statmech = None,
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -505,21 +362,15 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 19,
+    index = -1,
     label = "RsCrsR2",
     group = "OR{RsCrsR2x000, RsCrsR2x111, RsCrsR2x222, RsCrsR2x001, RsCrsR2x002, RsCrsR2x110, RsCrsR2x112, RsCrsR2x220, RsCrsR2x221, RsCrsR2x012}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (360, 370, 2),
-            (300, 400, 1),
-        ],
-        symmetry = 6,
-    ),
+    statmech = None,
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -527,7 +378,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -546,7 +397,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -562,7 +413,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -578,7 +429,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -594,7 +445,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -613,22 +464,15 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 20,
+    index = -1,
     label = "Alcohol",
     group = "OR{Alcoholx0, Alcoholx1, Alcoholx2}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (3580, 3650, 1),
-            (1210, 1345, 1),
-            (900, 1100, 1),
-        ],
-        symmetry = 1,
-    ),
+    statmech = None,
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -636,20 +480,15 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 21,
+    index = -1,
     label = "Ether",
     group = "OR{Etherx00, Etherx01, Etherx11, Etherx02, Etherx12, Etherx22}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (350, 500, 1),
-        ],
-        symmetry = 2,
-    ),
+    statmech = None,
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -657,24 +496,15 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 22,
+    index = -1,
     label = "ROOH",
     group = "OR{ROOHx0, ROOHx1, ROOHx2}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (3580, 3650, 1),
-            (1300, 1320, 1),
-            (350, 425, 1),
-            (825, 875, 1),
-            (900, 1100, 1),
-        ],
-        symmetry = 1,
-    ),
+    statmech = None,
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -682,21 +512,15 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 23,
+    index = -1,
     label = "ROOR",
     group = "OR{ROORx00, ROORx01, ROORx11, ROORx02, ROORx12, ROORx22}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (350, 500, 1),
-            (795, 815, 1),
-        ],
-        symmetry = 2,
-    ),
+    statmech = None,
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -704,22 +528,15 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 24,
+    index = -1,
     label = "Peroxy",
     group = "OR{Peroxyx0, Peroxyx1, Peroxyx2}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (470, 515, 1),
-            (1100, 1170, 1),
-            (900, 1100, 1),
-        ],
-        symmetry = 1,
-    ),
+    statmech = None,
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -727,7 +544,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -746,7 +563,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -762,7 +579,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -781,7 +598,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -800,7 +617,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -819,26 +636,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
-    ],
-)
-
-entry(
-    index = -1,
-    label = "R!Hx3",
-    group = 
-"""
-1 * R!H {3D,3Q}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        ("Tue Feb 4 12:27:50 2014","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -861,7 +659,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -884,7 +682,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -907,7 +705,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -929,7 +727,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -951,7 +749,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -973,7 +771,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -994,7 +792,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1015,7 +813,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1038,7 +836,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1061,7 +859,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1084,7 +882,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1107,7 +905,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1130,7 +928,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1153,7 +951,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1175,7 +973,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1197,7 +995,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1219,7 +1017,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1240,7 +1038,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1261,7 +1059,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1282,7 +1080,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1303,7 +1101,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1324,7 +1122,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1345,7 +1143,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1366,7 +1164,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1387,7 +1185,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1408,7 +1206,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1430,7 +1228,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1452,7 +1250,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1474,7 +1272,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1496,7 +1294,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1518,7 +1316,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1540,7 +1338,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1562,7 +1360,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1584,7 +1382,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1606,7 +1404,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1627,7 +1425,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1648,7 +1446,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1669,7 +1467,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1690,7 +1488,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1711,7 +1509,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1732,7 +1530,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1755,7 +1553,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1778,7 +1576,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1801,7 +1599,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1824,7 +1622,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1847,7 +1645,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1870,7 +1668,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1893,7 +1691,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1916,7 +1714,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1939,7 +1737,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1962,7 +1760,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1984,7 +1782,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2006,7 +1804,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2028,7 +1826,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2050,7 +1848,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2072,7 +1870,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2094,7 +1892,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2116,7 +1914,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2138,7 +1936,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2160,7 +1958,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2182,7 +1980,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2204,7 +2002,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2226,7 +2024,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2248,7 +2046,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2270,7 +2068,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2292,7 +2090,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2314,7 +2112,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2336,7 +2134,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2358,7 +2156,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2380,7 +2178,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2402,7 +2200,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2424,7 +2222,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2446,7 +2244,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2468,7 +2266,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2490,7 +2288,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2513,7 +2311,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2536,7 +2334,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2559,7 +2357,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2582,7 +2380,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2605,7 +2403,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2628,7 +2426,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2651,7 +2449,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2674,7 +2472,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2697,7 +2495,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2720,7 +2518,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2743,7 +2541,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2766,7 +2564,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2789,7 +2587,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2812,7 +2610,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2835,7 +2633,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2857,7 +2655,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2879,7 +2677,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2901,7 +2699,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2922,7 +2720,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2943,7 +2741,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2964,7 +2762,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2984,7 +2782,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3004,7 +2802,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3026,7 +2824,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3048,7 +2846,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3070,7 +2868,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3092,7 +2890,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3114,7 +2912,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3136,7 +2934,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3157,7 +2955,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3178,7 +2976,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3199,7 +2997,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3220,7 +3018,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3241,7 +3039,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3262,7 +3060,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3283,7 +3081,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3304,7 +3102,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3325,7 +3123,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3346,7 +3144,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3367,7 +3165,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3388,7 +3186,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3410,7 +3208,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3432,7 +3230,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3454,7 +3252,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3476,7 +3274,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3498,7 +3296,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3520,7 +3318,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3542,7 +3340,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3564,7 +3362,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3586,7 +3384,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3608,7 +3406,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3629,7 +3427,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3650,7 +3448,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3671,7 +3469,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3691,7 +3489,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3711,7 +3509,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3731,7 +3529,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3752,7 +3550,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3773,7 +3571,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3794,7 +3592,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3815,7 +3613,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3836,7 +3634,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3857,7 +3655,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3878,7 +3676,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3899,7 +3697,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3920,7 +3718,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3941,7 +3739,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3962,7 +3760,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3983,7 +3781,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -4004,7 +3802,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -4025,7 +3823,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -4046,7 +3844,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -4068,7 +3866,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -4090,7 +3888,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -4112,7 +3910,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -4134,7 +3932,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -4156,7 +3954,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -4178,7 +3976,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -4200,7 +3998,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -4222,7 +4020,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -4244,7 +4042,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -4265,7 +4063,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -4286,7 +4084,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -4307,7 +4105,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -4327,7 +4125,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -4347,7 +4145,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -4367,738 +4165,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
-    ],
-)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-entry(
-    index = -1,
-    label = "N_R0",
-    group = 
-"""
-1 * N 0
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = 25,
-    label = "Amide_pri",
-    group = "OR{Amide_prix0}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (3480, 3540, 1), # asymmetric N-H stretch, (free) primary amides
-            (3380, 3420, 1), # symmetric N-H stretch, (free) primary amides
-            (1670, 1690, 1), # C=O stretch, known as amide I band, primary amides (dilute solution)
-            (1590, 1620, 1), # , primary amides (dilute solution)
-            (1400, 1420, 1), # C-N stretch, known as amide III band, primary amides
-            (1140, 1160, 1), # NH2 in-plane rocking vibration, primary amides
-            (600, 750, 1),   # br. NH2 deformation vibration, primary amides
-            (550, 600, 1),   # N-C=O deformation vibration, primary amides
-            (450, 500, 1),   # C-C=O deformation vibration, primary amides
-        ],
-        symmetry = 1,
-    ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = -1,
-    label = "Amide_prix0",
-    group = 
-"""
-1 * N   0 {2,S} {5,S} {6,S}
-2   C   0 {1,S} {3,S} {4,D}
-3   C   0 {2,S}
-4   O   0 {2,D}
-5   H   0 {1,S}
-6   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = 26,
-    label = "Amide_sec",
-    group = "OR{Amide_secx0}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (3420, 3460, 1), # N-H stretch, trans form (in dilute solution)
-            (1510, 1550, 1), # amide II band, trans form (in dilute solution)
-            (1665, 1700, 1), # C=O stretch, secondary amides (dilute solution)
-            (1200, 1305, 1), # amide III band, secondary amides (trans form)
-            (620, 770, 1),   # br. out-of-plane N-H, secondary amides (trans form)
-        ],
-        symmetry = 1,
-    ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = -1,
-    label = "Amide_secx0",
-    group = 
-"""
-1 * N   0 {2,S} {5,S} {6,S}
-2   C   0 {1,S} {3,S} {4,D}
-3   C   0 {2,S}
-4   O   0 {2,D}
-5   C   0 {1,S}
-6   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = 27,
-    label = "Amide_ter",
-    group = "OR{Amide_terx0}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (1630, 1670, 1), # C=O stretch, tertiary amides (dilute solution or solid phase)
-            (700, 870, 1), # asymmetric CNC stretch, tertiary amides
-            (570, 620, 1), # , tertiary amides
-            (440, 480, 1), # , tertiary amides
-            (320, 390, 1), # , tertiary amides
-        ],
-        symmetry = 1,
-    ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = -1,
-    label = "Amide_terx0",
-    group = 
-"""
-1 * N   0 {2,S} {5,S} {6,S}
-2   C   0 {1,S} {3,S} {4,D}
-3   C   0 {2,S}
-4   O   0 {2,D}
-5   C   0 {1,S}
-6   C   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = 28,
-    label = "Imide",
-    group = "OR{Imidex0}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (3200, 3280, 1), # N-H stretch, Imides (solid phase)
-            (1670, 1740, 1), # C=O stretch, amide I band, Imides (solid phase)
-            (1500, 1510, 1), # br., amide II band, Imides (solid phase)
-            (1165, 1235, 1), # amide III band, Imides (solid phase)
-            (730, 740, 1),   # br. N-H wagging, amide II band, Imides (solid phase)
-        ],
-        symmetry = 1,
-    ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = -1,
-    label = "Imidex0",
-    group = 
-"""
-1 * N   0 {2,S} {3,S} {6,S}
-2   H   0 {1,S}
-3   C   0 {1,S} {4,D} {5,S}
-4   O   0 {3,D}
-5   R   0 {3,S}
-6   C   0 {1,S} {7,D} {8,S}
-7   O   0 {6,D}
-8   R   0 {6,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = 29,
-    label = "Amine_pri",
-    group = "OR{Amine_prix0}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (3330, 3550, 1), # asymmetric NH2 stretch, primary amines
-            (3250, 3450, 1), # symmetric NH2 stretch, primary amines
-            (1580, 1650, 1), # br. scissor vibration, saturated primary amines
-            (1145, 1295, 1), # NH2 rocking/twisting vibration, saturated primary amines
-            (650, 895, 1), # N-H bending out of plane, saturated primary amines
-        ],
-        symmetry = 1,
-    ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = -1,
-    label = "Amine_prix0",
-    group = 
-"""
-1 * N   0 {2,S} {3,S} {4,S}
-2   C   0 {1,S}
-3   H   0 {1,S}
-4   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = 30,
-    label = "Amine_sec",
-    group = "OR{Amine_secx0}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (3400, 3450, 1), # , secondary amines
-            (1490, 1580, 1), # , secondary amines
-            (700, 750, 1), # br. N-H wagging vibration, secondary amines
-        ],
-        symmetry = 1,
-    ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = -1,
-    label = "Amine_secx0",
-    group = 
-"""
-1 * N   0 {2,S} {3,S} {4,S}
-2   C   0 {1,S}
-3   C   0 {1,S}
-4   H   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = 31,
-    label = "Amine_ter",
-    group = "OR{Amine_terx0}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (1020, 1250, 2),
-        ],
-        symmetry = 1,
-    ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = -1,
-    label = "Amine_terx0",
-    group = 
-"""
-1 * N   0 {2,S} {3,S} {4,S}
-2   C   0 {1,S}
-3   C   0 {1,S}
-4   C   0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = 32,
-    label = "Nitrile",
-    group = "OR{Nitrilex0}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (2230, 2260, 1), # C#N stretching, saturated aliphatic nitriles
-            (340, 390, 1),   # C#N deformation, aliphatic nitriles
-            (200, 160, 1),   # C#N deformation, aliphatic nitriles
-        ],
-        symmetry = 1,
-    ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = -1,
-    label = "Nitrilex0",
-    group = 
-"""
-1 * N   0 {2,T}
-2   C   0 {1,T} {3,S}
-3   C   0 {2,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = -1,
-    label = "Nitrilex1",
-    group = 
-"""
-1 * N   0 {2,T}
-2   C   0 {1,T} {3,S}
-3   C   1 {2,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = -1,
-    label = "Nitrilex2",
-    group = 
-"""
-1 * N   0       {2,T}
-2   C   0       {1,T} {3,S}
-3   C   {2S,2T} {2,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = 33,
-    label = "Nitroso",
-    group = "OR{Nitrosox0, Nitrosox1, Nitrosox2}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (1330, 1425, 1), # aliphatic compounds
-            (1320, 1345, 1), # aliphatic compounds
-        ],
-        symmetry = 1,
-    ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = -1,
-    label = "Nitrosox0",
-    group = 
-"""
-1 * N   0 {2,D} {3,S}
-2   O   0 {1,D}
-3   R!H 0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = -1,
-    label = "Nitrosox1",
-    group = 
-"""
-1 * N   0 {2,D} {3,S}
-2   O   0 {1,D}
-3   R!H 1 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = -1,
-    label = "Nitrosox2",
-    group = 
-"""
-1 * N   0       {2,D} {3,S}
-2   O   0       {1,D}
-3   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = 34,
-    label = "Nitrites",
-    group = "OR{Nitritesx0}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (3220, 3360, 1), # Overtones of N=O stretch, nitrite compounds
-            (1650, 1680, 1), # N=O stretch, nitrites, trans form
-            (750, 815, 1),   # N-O stretch trans form, saturated primary and secondary aliphatic nitro compounds
-            (565, 625, 1),   # O-N=O deformation vibration, saturated primary and secondary aliphatic nitro compounds
-        ],
-        symmetry = 1,
-    ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = -1,
-    label = "Nitritesx0",
-    group = 
-"""
-1 * N 0 {2,D} {3,S}
-2   O 0 {1,D}
-3   O 0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = 35,
-    label = "Nitro",
-    group = "OR{Nitrox0, Nitrox1, Nitrox2}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (1545, 1555, 1), # asymmetric NO2 stretch, saturated primary and secondary aliphatic nitro compounds
-            (1360, 1385, 1), # symmetric NO2 stretch, saturated primary and secondary aliphatic nitro compounds
-            (915, 1000, 1),  # C-N stretch trans form, saturated primary and secondary aliphatic nitro compounds
-            (850, 920, 1),  # br. C-N stretch gauche form, saturated primary and secondary aliphatic nitro compounds
-            (605, 655, 1),  # NO2 deformation vibration, saturated primary and secondary aliphatic nitro compounds
-            (470, 560, 1),  # NO2 rocking vibration, saturated primary and secondary aliphatic nitro compounds
-        ],
-        symmetry = 2,
-    ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = -1,
-    label = "Nitrox0",
-    group = 
-"""
-1 * N   0 {2,D} {3,S} {4,S}
-2   O   0 {1,D}
-3   O   0 {1,S}
-4   R!H 0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = -1,
-    label = "Nitrox1",
-    group = 
-"""
-1 * N   0 {2,D} {3,S} {4,S}
-2   O   0 {1,D}
-3   O   0 {1,S}
-4   R!H 1 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = -1,
-    label = "Nitrox2",
-    group = 
-"""
-1 * N   0       {2,D} {3,S} {4,S}
-2   O   0       {1,D}
-3   O   0       {1,S}
-4   R!H {2S,2T} {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = 36,
-    label = "Nitrates",
-    group = "OR{Nitratesx0}",
-    statmech = GroupFrequencies(
-        frequencies = [
-            (1615, 1660, 1), # asymmetric NO2 stretch, Nitrates, -ONO2
-            (1250, 1300, 1), # symmetric NO2 stretch, Nitrates, -ONO2
-            (840, 870, 1),   # br.N-O stretch, Nitrates, -ONO2
-            (745, 765, 1),   # NO2 out-of-plane deformation vibration, Nitrates, -ONO2
-            (680, 720, 1),   # NO2 deformation vibration, Nitrates, -ONO2
-            (560, 610, 1),   # NO2 in-plane deformation vibration, Nitrates, -ONO2
-        ],
-        symmetry = 2,
-    ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
-    ],
-)
-
-entry(
-    index = -1,
-    label = "Nitratesx0",
-    group = 
-"""
-1 * N 0 {2,D} {3,S} {4,S}
-2   O 0 {1,D}
-3   O 0 {1,S}
-4   O 0 {1,S}
-""",
-    statmech = None,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-
-""",
-    history = [
-        (""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -5139,19 +4206,6 @@ L1: R!H
         L3: Peroxy
     L2: O_R1
         L3: Oxy
-    L2: N_R0
-        L3: Amide_pri
-        L3: Amide_sec
-        L3: Amide_ter
-        L3: Imide
-        L3: Amine_pri
-        L3: Amine_sec
-        L3: Amine_ter
-        L3: Nitrile
-        L3: Nitroso
-            L4: Nitrites
-        L3: Nitro
-            L4: Nitrates
 """
 )
 

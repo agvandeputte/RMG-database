@@ -101,8 +101,8 @@ entry(
     label = "R_H",
     group = 
 """
-1 *3 {H,Cs,Cd,Cb,Sis,Sid,N} 0 {2,S}
-2 *4 H                      0 {1,S}
+1 *3 {H,Cs,Cd,Cb,Sis,Sid} 0 {2,S}
+2 *4 H                    0 {1,S}
 """,
     kinetics = None,
     reference = None,
@@ -114,6 +114,7 @@ u"""
 """,
     history = [
         ("Thu Nov 15 16:45:30 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -927,11 +928,11 @@ entry(
     label = "R_R'",
     group = 
 """
-1 *3 {Cs,Sis,N}           0 {2,S} {3,S} {4,S} {5,S}
-2 *4 {Cs,Cd,Cb,Sis,Sid,N} 0 {1,S}
-3    H                    0 {1,S}
-4    H                    0 {1,S}
-5    H                    0 {1,S}
+1 *3 {Cs,Sis}           0 {2,S} {3,S} {4,S} {5,S}
+2 *4 {Cs,Cd,Cb,Sis,Sid} 0 {1,S}
+3    H                  0 {1,S}
+4    H                  0 {1,S}
+5    H                  0 {1,S}
 """,
     kinetics = None,
     reference = None,
@@ -943,6 +944,7 @@ u"""
 """,
     history = [
         ("Thu Nov 15 16:45:30 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 

@@ -87,6 +87,7 @@ Checked by Greg Magoon; I suspect the parameters in the paper come from a differ
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -128,6 +129,7 @@ Verified by Greg Magoon: RMG value agrees with NIST record, and the points in th
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -179,6 +181,7 @@ MRH 31-Aug-2009
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -219,6 +222,7 @@ Verified by Greg Magoon; I changed the DA uncertainty from (times/divide)1.1 to 
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -294,6 +298,7 @@ Verified by Greg Magoon; I changed the DA uncertainty from (times/divide)1.25 to
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -333,6 +338,7 @@ Verified by Greg Magoon; note that the value in rateLibrary agrees with value re
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -373,12 +379,13 @@ Verified by Greg Magoon; RMG and NIST data seem to be the same; presumably, NIST
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
     index = 433,
-    label = "H_rad;Ct_rad/Ct",
+    label = "H_rad;Ct_rad",
     group1 = 
 """
 1 * H 1
@@ -420,7 +427,7 @@ Fall-off and collisional efficiencies are available in reference
 MRH 28-Aug-2009
 """,
     history = [
-        ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
@@ -457,15 +464,16 @@ u"""
 [173] Ackerman, L.; Hippler, H.; Pagsberg, P.; Reihs, C.; Troe, J. J. Phys. Chem. 1990, 94, 5247. 
 (300K, absolute value measured directly, excitation : flash photolysis, analysis : VIS-UV absorption, pressure 0.01-0.99 atm) 
 
-[172b] Emdee, J. L., Brezinsky, K., and Glassman, I., J. Phys. Chem. 96:2151–2161 (1992) DOI: 10.1021/j100184a025
+[172b] Emdee, J. L., Brezinsky, K., and Glassman, I., J. Phys. Chem. 96:21512161 (1992) DOI: 10.1021/j100184a025
 H + phenyl --> benzene (R1 in [172]) (Reaction 1 in [172b])
 Verified by Greg Magoon
-[172]: reported rate coefficient is for k_inf (see Table 1); temperature range considered is 1000-1200 K; this paper cites: Emdee, J. L., Brezinsky, K., and Glassman, I., J. Phys. Chem. 96:2151–2161 (1992) DOI: 10.1021/j100184a025 (included as 172b, above), which, in turn, references [173] (Troe) paper...conditions for this paper are 1100 K - 1200 K
+[172]: reported rate coefficient is for k_inf (see Table 1); temperature range considered is 1000-1200 K; this paper cites: Emdee, J. L., Brezinsky, K., and Glassman, I., J. Phys. Chem. 96:21512161 (1992) DOI: 10.1021/j100184a025 (included as 172b, above), which, in turn, references [173] (Troe) paper...conditions for this paper are 1100 K - 1200 K
 [173]: this contains the uncertainty estimate (see Table 2); I updated the DA uncertainty as I have done elsewhere; this seems to be the actual raw value that was subsequently interpreted/used in the paper cited by Ref. 172; conditions are 300 K and 1 bar, so apparently, the paper cited by Ref. 172 and/or Ref. 172 itself has assumed that it is in high-pressure limit and that it is temperature independent
 [172b]: see Table III
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -506,6 +514,7 @@ Verified by Greg Magoon; three A factors have been reported (for 3 different den
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -542,6 +551,7 @@ H + OH --> H2O
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -586,6 +596,7 @@ Verified by Greg Magoon; NIST record has slightly different parameters than RMG 
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -641,6 +652,7 @@ MRH 31-Aug-2009
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -697,6 +709,7 @@ MRH 31-Aug-2009
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -746,6 +759,7 @@ but rateLibrary has slightly different value of 6.64E14
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -812,6 +826,7 @@ MRH 31-Aug-2009
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -854,6 +869,7 @@ Verified by Greg Magoon; DA uncertainty updated, as I have done elsewhere
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -897,6 +913,7 @@ Verified by Greg Magoon; 0.05 kcal barrier changed to 0.046 as reported in paper
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -940,6 +957,7 @@ Verified by Greg Magoon; values appear in Appendix A and (with uncertainty) on p
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -990,6 +1008,7 @@ MRH 28-Aug-2009
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1032,6 +1051,7 @@ Verified by Greg Magoon; Note that the paper cites 4 other values for k6 from li
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1090,6 +1110,7 @@ MRH 28-Aug-2009
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1143,6 +1164,7 @@ MRH 31-Aug-2009
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1191,6 +1213,7 @@ MRH 28-Aug-2009
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1241,6 +1264,7 @@ MRH 31-Aug-2009
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1292,6 +1316,7 @@ MRH 30-Aug-2009
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1355,6 +1380,7 @@ MRH 31-Aug-2009
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1403,6 +1429,7 @@ MRH 28-Aug-2009
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1451,6 +1478,7 @@ MRH 28-Aug-2009
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1492,6 +1520,7 @@ Verified by Greg Magoon; value reported for k1a,Infinity (high-pressure) appears
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1548,6 +1577,7 @@ MRH 30-Aug-2009
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1609,6 +1639,7 @@ MRH 31-Aug-2009
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1663,6 +1694,7 @@ MRH 30-Aug-2009
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1711,6 +1743,7 @@ MRH 30-Aug-2009
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1771,6 +1804,7 @@ MRH 31-Aug-2009
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1822,6 +1856,7 @@ MRH 31-Aug-2009
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1882,6 +1917,7 @@ MRH 31-Aug-2009
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1932,6 +1968,7 @@ MRH 31-Aug-2009
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -1972,12 +2009,13 @@ Verified by Greg Magoon; DA uncertainty updated, as I have done elsewhere; based
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
     index = 465,
-    label = "Cd_pri_rad;Ct_rad/Ct",
+    label = "Cd_pri_rad;Ct_rad",
     group1 = 
 """
 1 * C 1 {2,D} {3,S}
@@ -2012,7 +2050,7 @@ NIST record: http://kinetics.nist.gov/kinetics/Detail?id=1988DUR/AMO636:4
 Verified by Greg Magoon; value confirmed from paper data in Table III; this is presumably high-pressure limit since no pressure-dependence is indicated in the table
 """,
     history = [
-        ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2061,6 +2099,7 @@ MRH 28-Aug-2009
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2100,6 +2139,7 @@ Phenyl + Phenyl --> Biphenyl
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2142,6 +2182,7 @@ Verified by Greg Magoon: total pressure ~7 torr; DA uncertainty changed to addit
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2183,6 +2224,7 @@ Verified by Greg Magoon: the existing k in the rateLibrary appeared to be off by
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2231,6 +2273,7 @@ MRH 28-Aug-2009
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2278,6 +2321,7 @@ MRH 28-Aug-2009
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2334,6 +2378,7 @@ MRH 1-Sept-2009
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2381,6 +2426,7 @@ MRH 28-Aug-2009
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2417,6 +2463,7 @@ Curran's estimation, based on half that recommended by Allara and Shaw [146] for
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2456,6 +2503,7 @@ Curran's estimation, based on recommendations of Tsang [92] for CH3 + tC4H9
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2495,6 +2543,7 @@ Curran's estimation based on half Tsang's [91] recommendation for CH3 + iC3H7
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2534,6 +2583,7 @@ Curran's estimation for neoC5H11 + iC3H7, similar to tC4H9 + iC4H9
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2575,6 +2625,7 @@ values from literature for smaller alkyl, based upon the consideration that rate
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2615,6 +2666,7 @@ Verified by Greg Magoon; it is not immediately clear whether this rate constant 
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2684,6 +2736,7 @@ Moved from R_Addition_MultipleBond on 3-Jun-2010, JDM.
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2723,6 +2776,7 @@ Moved from R_Addition_MultipleBond on 3-Jun-2010, JDM.
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2766,20 +2820,20 @@ In their study modelling iso-octane oxidation, Curran et al [8] chose to use the
 Rates measurement of **n-butyl** + O2 at 300 K. High pressure limit from flash photolysis experiments.
 
 C.D.W. divided rate expression by 2, to get rate of addition rate per site,
-giving  (2.26±0.42)E12 cm3/mole/sec.
+giving  (2.260.42)E12 cm3/mole/sec.
 
     Rate constants for the reaction of four different butyl radicals with molecular oxygen 
     have been measured **at room temperature**. The radicals were generated by flash photolysis 
     and their time decay was followed with a photoionization mass spectrometer. The radical 
-    concentrations were kept low to avoid complications from radical–radical reactions. 
+    concentrations were kept low to avoid complications from radicalradical reactions. 
     Radical lifetimes were long, up to 50 msec, thus assuring that thermalized radicals were being studied. 
     
-    The rate constants, in units of 10E−11 cm3/molecule/sec, are:
+    The rate constants, in units of 10E11 cm3/molecule/sec, are:
     
-     * **n-butyl (0.75±0.14); (gives (2.26±0.42)E12 cm3/mole/sec when divided by 2 to get rate per site)**
-     * s-butyl (1.66±0.22); (gives (5.00±0.66)E12 cm3/mole/sec when divided by 2 to get rate per site)
-     * t-butyl (2.34±0.39); (gives (7.05±1.17)E12 cm3/mole/sec when divided by 2 to get rate per site)
-     * 3-hydroxy s-butyl (2.8±1.8). (gives (8.43±5.42)E12 cm3/mole/sec when divided by 2 to get rate per site)
+     * **n-butyl (0.750.14); (gives (2.260.42)E12 cm3/mole/sec when divided by 2 to get rate per site)**
+     * s-butyl (1.660.22); (gives (5.000.66)E12 cm3/mole/sec when divided by 2 to get rate per site)
+     * t-butyl (2.340.39); (gives (7.051.17)E12 cm3/mole/sec when divided by 2 to get rate per site)
+     * 3-hydroxy s-butyl (2.81.8). (gives (8.435.42)E12 cm3/mole/sec when divided by 2 to get rate per site)
      
     No pressure dependence of the rate constants was observed over the range 1 to 4 Torr. 
 
@@ -2791,6 +2845,7 @@ Moved from R_Addition_MultipleBond on 3-Jun-2010, JDM.
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2831,20 +2886,20 @@ In their study modelling iso-octane oxidation, Curran et al [8] chose to use the
 
 Rates measurement of **n-butyl** + O2 at 300 K. High pressure limit from flash photolysis experiments.
 C.D.W. divided rate expression by 2, to get rate of addition rate per site, 
-giving  (2.26±0.42)E12 cm3/mole/sec.
+giving  (2.260.42)E12 cm3/mole/sec.
 
     Rate constants for the reaction of four different butyl radicals with molecular oxygen 
     have been measured **at room temperature**. The radicals were generated by flash photolysis 
     and their time decay was followed with a photoionization mass spectrometer. The radical 
-    concentrations were kept low to avoid complications from radical–radical reactions. 
+    concentrations were kept low to avoid complications from radicalradical reactions. 
     Radical lifetimes were long, up to 50 msec, thus assuring that thermalized radicals were being studied. 
     
-    The rate constants, in units of 10E−11 cm3/molecule/sec, are:
+    The rate constants, in units of 10E11 cm3/molecule/sec, are:
     
-     * n-butyl (0.75±0.14); (gives (2.26±0.42)E12 cm3/mole/sec when divided by 2 to get rate per site)
-     * s-butyl (1.66±0.22); (gives (5.00±0.66)E12 cm3/mole/sec when divided by 2 to get rate per site)
-     * t-butyl (2.34±0.39); (gives (7.05±1.17)E12 cm3/mole/sec when divided by 2 to get rate per site)
-     * 3-hydroxy s-butyl (2.8±1.8). (gives (8.43±5.42)E12 cm3/mole/sec when divided by 2 to get rate per site)
+     * n-butyl (0.750.14); (gives (2.260.42)E12 cm3/mole/sec when divided by 2 to get rate per site)
+     * s-butyl (1.660.22); (gives (5.000.66)E12 cm3/mole/sec when divided by 2 to get rate per site)
+     * t-butyl (2.340.39); (gives (7.051.17)E12 cm3/mole/sec when divided by 2 to get rate per site)
+     * 3-hydroxy s-butyl (2.81.8). (gives (8.435.42)E12 cm3/mole/sec when divided by 2 to get rate per site)
      
     No pressure dependence of the rate constants was observed over the range 1 to 4 Torr. 
 
@@ -2857,6 +2912,7 @@ Moved from R_Addition_MultipleBond on 3-Jun-2010, JDM.
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2889,7 +2945,7 @@ entry(
     shortDesc = u"""Curran et al. [8]. (Estimated at 300K)""",
     longDesc = 
 u"""
-Lenhardt [143] measured (10.0±1.3)E12 cm3/mole/sec (at 300K, high pressure limit, from flash photolysis experiments.)
+Lenhardt [143] measured (10.01.3)E12 cm3/mole/sec (at 300K, high pressure limit, from flash photolysis experiments.)
 Atkinson [96], in their review, recommend 6.62E12 cm3/mole/sec. (according to Curran [8]).
 Curran [8], in their modelling paper, refer to both these and chose and "intermediate" value of 7.54E12 cm3/mol/sec.
 
@@ -2909,6 +2965,7 @@ Moved from R_Addition_MultipleBond on 3-Jun-2010, JDM.
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -2949,20 +3006,20 @@ In their study modelling iso-octane oxidation, Curran et al [8] chose to use the
 
 Rates measurement of **t-butyl** + O2 at 300 K. High pressure limit from flash photolysis experiments.
 C.D.W. divided rate expression by 2, to get rate of addition rate per site, 
-giving  (7.05±1.17)E12 cm3/mole/sec.
+giving  (7.051.17)E12 cm3/mole/sec.
 
     Rate constants for the reaction of four different butyl radicals with molecular oxygen 
     have been measured **at room temperature**. The radicals were generated by flash photolysis 
     and their time decay was followed with a photoionization mass spectrometer. The radical 
-    concentrations were kept low to avoid complications from radical–radical reactions. 
+    concentrations were kept low to avoid complications from radicalradical reactions. 
     Radical lifetimes were long, up to 50 msec, thus assuring that thermalized radicals were being studied. 
     
-    The rate constants, in units of 10E−11 cm3/molecule/sec, are:
+    The rate constants, in units of 10E11 cm3/molecule/sec, are:
     
-     * n-butyl (0.75±0.14); (gives (2.26±0.42)E12 cm3/mole/sec when divided by 2 to get rate per site)
-     * s-butyl (1.66±0.22); (gives (5.00±0.66)E12 cm3/mole/sec when divided by 2 to get rate per site)
-     * **t-butyl (2.34±0.39); (gives (7.05±1.17)E12 cm3/mole/sec when divided by 2 to get rate per site)**
-     * 3-hydroxy s-butyl (2.8±1.8). (gives (8.43±5.42)E12 cm3/mole/sec when divided by 2 to get rate per site)
+     * n-butyl (0.750.14); (gives (2.260.42)E12 cm3/mole/sec when divided by 2 to get rate per site)
+     * s-butyl (1.660.22); (gives (5.000.66)E12 cm3/mole/sec when divided by 2 to get rate per site)
+     * **t-butyl (2.340.39); (gives (7.051.17)E12 cm3/mole/sec when divided by 2 to get rate per site)**
+     * 3-hydroxy s-butyl (2.81.8). (gives (8.435.42)E12 cm3/mole/sec when divided by 2 to get rate per site)
      
     No pressure dependence of the rate constants was observed over the range 1 to 4 Torr. 
 
@@ -2975,6 +3032,7 @@ Moved from R_Addition_MultipleBond on 3-Jun-2010, JDM.
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3013,6 +3071,7 @@ Moved from R_Addition_MultipleBond on 3-Jun-2010, JDM.
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3051,6 +3110,7 @@ Moved from R_Addition_MultipleBond on 3-Jun-2010, JDM.
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3089,6 +3149,7 @@ Moved from R_Addition_MultipleBond on 3-Jun-2010, JDM.
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3127,6 +3188,55 @@ Moved from R_Addition_MultipleBond on 3-Jun-2010, JDM.
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
+    ],
+)
+
+entry(
+    index = 491,
+    label = "Y_rad;H_rad",
+    group1 = 
+"""
+1 * R 1
+""",
+    group2 = 
+"""
+1 * H 1
+""",
+    kinetics = ArrheniusEP(
+        A = (10000000000000.0, 'cm^3/(mol*s)'),
+        n = 0,
+        alpha = 0,
+        E0 = (0, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    reference = None,
+    referenceType = "",
+    rank = 1,
+    shortDesc = u"""MRH estimate""",
+    longDesc = 
+u"""
+MRH estimate
+
+A reasonable estimate for the total k_inf(T) for the recombination of H radical with a heavy atom
+is a temperature-independent 1e+14 cm3 mol-1 s-1.  HOWEVER, the value I choose to store in the database
+is 1e+13 cm3 mol-1 s-1, because this is the single-event value.  Not knowing what species RMG will find
+in trying this estimate, I want to fail on the low side.
+
+Using a hydrogen on a primary carbon as an example: Ethane has a multiplicity of six, iso-butane has a
+multiplicity of nine, and neo-pentane has a multiplicity of 12.  Using the 1e+13 cm3 mol-1 s-1 with any
+of these multiplicities will not result in ridiculously fast kinetics.  The purpose of adding entries
+491 and 492 are to reduce the chance RMG sends ridiculously fast high-P-limit kinetics to fame, thereby
+giving us ridiculously fast k(T,P) in our chem.inp files and causing stiffness issues in flame solvers.
+
+NOTE TO RMG USERS: If your model proves to be sensitive to the kinetics of the H+R(+M)=H-R(+M), I would
+encourage you to run a fame job separately, with the 1e+14 cm3 mol-1 s-1 as the total k(T) (if no better
+estimate is known).
+""",
+    history = [
+        ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3159,57 +3269,11 @@ entry(
     shortDesc = u"""A.G. Vandeputte""",
     longDesc = 
 u"""
-MRH estimate
-
-A reasonable estimate for the total k_inf(T) for the recombination of H radical with a heavy atom
-is a temperature-independent 1e+14 cm3 mol-1 s-1.  HOWEVER, the value I choose to store in the database
-is 1e+13 cm3 mol-1 s-1, because this is the single-event value.  Not knowing what species RMG will find
-in trying this estimate, I want to fail on the low side.
-
-Using a hydrogen on a primary carbon as an example: Ethane has a multiplicity of six, iso-butane has a
-multiplicity of nine, and neo-pentane has a multiplicity of 12.  Using the 1e+13 cm3 mol-1 s-1 with any
-of these multiplicities will not result in ridiculously fast kinetics.  The purpose of adding entries
-491 and 492 are to reduce the chance RMG sends ridiculously fast high-P-limit kinetics to fame, thereby
-giving us ridiculously fast k(T,P) in our chem.inp files and causing stiffness issues in flame solvers.
-
-NOTE TO RMG USERS: If your model proves to be sensitive to the kinetics of the H+R(+M)=H-R(+M), I would
-encourage you to run a fame job separately, with the 1e+14 cm3 mol-1 s-1 as the total k(T) (if no better
-estimate is known).
-""",
-    history = [
-        ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
-    ],
-)
-
-entry(
-    index = 491,
-    label = "Y_rad;H_rad",
-    group1 = 
-"""
-1 * R 1
-""",
-    group2 = 
-"""
-1 * H 1
-""",
-    kinetics = ArrheniusEP(
-        A = (10000000000000.0, 'cm^3/(mol*s)'),
-        n = 0,
-        alpha = 0,
-        E0 = (0, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    reference = None,
-    referenceType = "",
-    rank = 1,
-    shortDesc = u"""MRH estimate""",
-    longDesc = 
-u"""
 
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3240,10 +3304,18 @@ entry(
     shortDesc = u"""A.G. Vandeputte""",
     longDesc = 
 u"""
+MRH estimate
 
+A reasonable estimate for the total k_inf(T) for the recombination of two heavy atom radicals is a
+temperature-independent 1e+13 cm3 mol-1 s-1.  The actual high-P-limit k(T) sent to fame may be slightly
+larger (e.g. neo-pentane has a multiplicity of four for breaking a C-CH3 bond) but this is still
+reasonable.
+
+[Please read the comments for entry 491 - Y_rad + H_rad - for more background on the matter].
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3272,17 +3344,11 @@ entry(
     shortDesc = u"""MRH estimate""",
     longDesc = 
 u"""
-MRH estimate
 
-A reasonable estimate for the total k_inf(T) for the recombination of two heavy atom radicals is a
-temperature-independent 1e+13 cm3 mol-1 s-1.  The actual high-P-limit k(T) sent to fame may be slightly
-larger (e.g. neo-pentane has a multiplicity of four for breaking a C-CH3 bond) but this is still
-reasonable.
-
-[Please read the comments for entry 491 - Y_rad + H_rad - for more background on the matter].
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -3351,6 +3417,407 @@ u"""
 """,
     history = [
         ("Wed Jan  9 11:01:40 2013","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+    ],
+)
+
+entry(
+    index = 495,
+    label = "H_rad;C_rad/H2/Cd",
+    group1 = 
+"""
+1 * H 1
+""",
+    group2 = 
+"""
+1 * C  1 {2,S} {3,S} {4,S}
+2   H  0 {1,S}
+3   H  0 {1,S}
+4   Cd 0 {1,S}
+""",
+    kinetics = ArrheniusEP(
+        A = (29200000000000.0, 'cm^3/(mol*s)'),
+        n = 0.18,
+        alpha = 0,
+        E0 = (0.124, 'kcal/mol'),
+        Tmin = (200, 'K'),
+        Tmax = (2000, 'K'),
+    ),
+    reference = None,
+    referenceType = "",
+    rank = 3,
+    shortDesc = u"""Harding et al. (2007HAR/KLI3789-3801), value devided by 2 to account for two addition sites""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+    ],
+)
+
+entry(
+    index = 496,
+    label = "H_rad;C_rad/H/OneDeC",
+    group1 = 
+"""
+1 * H 1
+""",
+    group2 = 
+"""
+1 * C             1 {2,S} {3,S} {4,S}
+2   H             0 {1,S}
+3   {Cd,Ct,Cb,CO} 0 {1,S}
+4   Cs            0 {1,S}
+""",
+    kinetics = ArrheniusEP(
+        A = (29200000000000.0, 'cm^3/(mol*s)'),
+        n = 0.18,
+        alpha = 0,
+        E0 = (0.124, 'kcal/mol'),
+        Tmin = (200, 'K'),
+        Tmax = (2000, 'K'),
+    ),
+    reference = None,
+    referenceType = "",
+    rank = 5,
+    shortDesc = u"""Estimated by 495""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+    ],
+)
+
+entry(
+    index = 497,
+    label = "H_rad;C_rad/OneDe",
+    group1 = 
+"""
+1 * H 1
+""",
+    group2 = 
+"""
+1 * C             1 {2,S} {3,S} {4,S}
+2   {Cd,Ct,Cb,CO} 0 {1,S}
+3   {Cs,O}        0 {1,S}
+4   {Cs,O}        0 {1,S}
+""",
+    kinetics = ArrheniusEP(
+        A = (29200000000000.0, 'cm^3/(mol*s)'),
+        n = 0.18,
+        alpha = 0,
+        E0 = (0.124, 'kcal/mol'),
+        Tmin = (200, 'K'),
+        Tmax = (2000, 'K'),
+    ),
+    reference = None,
+    referenceType = "",
+    rank = 5,
+    shortDesc = u"""Estimated by 495""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+    ],
+)
+
+entry(
+    index = 498,
+    label = "H_rad;C_rad/TwoDe",
+    group1 = 
+"""
+1 * H 1
+""",
+    group2 = 
+"""
+1 * C             1 {2,S} {3,S} {4,S}
+2   {Cd,Ct,Cb,CO} 0 {1,S}
+3   {Cd,Ct,Cb,CO} 0 {1,S}
+4   {Cs,O}        0 {1,S}
+""",
+    kinetics = ArrheniusEP(
+        A = (29200000000000.0, 'cm^3/(mol*s)'),
+        n = 0.18,
+        alpha = 0,
+        E0 = (0.124, 'kcal/mol'),
+        Tmin = (200, 'K'),
+        Tmax = (2000, 'K'),
+    ),
+    reference = None,
+    referenceType = "",
+    rank = 5,
+    shortDesc = u"""Estimated by 495""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+    ],
+)
+
+entry(
+    index = 499,
+    label = "C_rad/H2/Cd;C_rad/H2/Cd",
+    group1 = 
+"""
+1 * C  1 {2,S} {3,S} {4,S}
+2   H  0 {1,S}
+3   H  0 {1,S}
+4   Cd 0 {1,S}
+""",
+    group2 = 
+"""
+1 * C  1 {2,S} {3,S} {4,S}
+2   H  0 {1,S}
+3   H  0 {1,S}
+4   Cd 0 {1,S}
+""",
+    kinetics = ArrheniusEP(
+        A = (10200000000000.0, 'cm^3/(mol*s)'),
+        n = 0,
+        alpha = 0,
+        E0 = (-0.26, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (2500, 'K'),
+    ),
+    reference = None,
+    referenceType = "",
+    rank = 4,
+    shortDesc = u"""Tsang (1991) Chemical kinetic data base for combustion chemistry. Part V. Propene Literature review""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+    ],
+)
+
+entry(
+    index = 500,
+    label = "C_rad/H2/Cd;C_rad/H2/Cs",
+    group1 = 
+"""
+1 * C  1 {2,S} {3,S} {4,S}
+2   H  0 {1,S}
+3   H  0 {1,S}
+4   Cd 0 {1,S}
+""",
+    group2 = 
+"""
+1 * C  1 {2,S} {3,S} {4,S}
+2   H  0 {1,S}
+3   H  0 {1,S}
+4   Cs 0 {1,S}
+""",
+    kinetics = ArrheniusEP(
+        A = (20500000000000.0, 'cm^3/(mol*s)'),
+        n = 0,
+        alpha = 0,
+        E0 = (-0.13, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (2500, 'K'),
+    ),
+    reference = None,
+    referenceType = "",
+    rank = 4,
+    shortDesc = u"""Tsang (1991) Chemical kinetic data base for combustion chemistry. Part V. Propene Literature review""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+    ],
+)
+
+entry(
+    index = 501,
+    label = "C_rad/H2/Cd;C_methyl",
+    group1 = 
+"""
+1 * C  1 {2,S} {3,S} {4,S}
+2   H  0 {1,S}
+3   H  0 {1,S}
+4   Cd 0 {1,S}
+""",
+    group2 = 
+"""
+1 * C 1 {2,S} {3,S} {4,S}
+2   H 0 {1,S}
+3   H 0 {1,S}
+4   H 0 {1,S}
+""",
+    kinetics = ArrheniusEP(
+        A = (102000000000000.0, 'cm^3/(mol*s)'),
+        n = -0.32,
+        alpha = 0,
+        E0 = (-0.13, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (2500, 'K'),
+    ),
+    reference = None,
+    referenceType = "",
+    rank = 4,
+    shortDesc = u"""Tsang (1991) Chemical kinetic data base for combustion chemistry. Part V. Propene Literature review""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+    ],
+)
+
+entry(
+    index = 502,
+    label = "C_rad/H2/Cd;C_rad/H/NonDeC",
+    group1 = 
+"""
+1 * C  1 {2,S} {3,S} {4,S}
+2   H  0 {1,S}
+3   H  0 {1,S}
+4   Cd 0 {1,S}
+""",
+    group2 = 
+"""
+1 * C  1 {2,S} {3,S} {4,S}
+2   H  0 {1,S}
+3   Cs 0 {1,S}
+4   Cs 0 {1,S}
+""",
+    kinetics = ArrheniusEP(
+        A = (115000000000000.0, 'cm^3/(mol*s)'),
+        n = -0.35,
+        alpha = 0,
+        E0 = (-0.13, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (2500, 'K'),
+    ),
+    reference = None,
+    referenceType = "",
+    rank = 4,
+    shortDesc = u"""Tsang (1991) Chemical kinetic data base for combustion chemistry. Part V. Propene Literature review""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+    ],
+)
+
+entry(
+    index = 503,
+    label = "C_rad/H2/Cd;C_rad/Cs3",
+    group1 = 
+"""
+1 * C  1 {2,S} {3,S} {4,S}
+2   H  0 {1,S}
+3   H  0 {1,S}
+4   Cd 0 {1,S}
+""",
+    group2 = 
+"""
+1 * C  1 {2,S} {3,S} {4,S}
+2   Cs 0 {1,S}
+3   Cs 0 {1,S}
+4   Cs 0 {1,S}
+""",
+    kinetics = ArrheniusEP(
+        A = (724000000000000.0, 'cm^3/(mol*s)'),
+        n = -0.75,
+        alpha = 0,
+        E0 = (-0.13, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (2500, 'K'),
+    ),
+    reference = None,
+    referenceType = "",
+    rank = 4,
+    shortDesc = u"""Tsang (1991) Chemical kinetic data base for combustion chemistry. Part V. Propene Literature review""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+    ],
+)
+
+entry(
+    index = 504,
+    label = "C_rad/H2/Cd;C_rad/H/CdCd",
+    group1 = 
+"""
+1 * C  1 {2,S} {3,S} {4,S}
+2   H  0 {1,S}
+3   H  0 {1,S}
+4   Cd 0 {1,S}
+""",
+    group2 = 
+"""
+1 * C  1 {2,S} {3,S} {4,S}
+2   H  0 {1,S}
+3   Cd 0 {1,S}
+4   Cd 0 {1,S}
+""",
+    kinetics = ArrheniusEP(
+        A = (10200000000000.0, 'cm^3/(mol*s)'),
+        n = 0,
+        alpha = 0,
+        E0 = (-0.26, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (2500, 'K'),
+    ),
+    reference = None,
+    referenceType = "",
+    rank = 5,
+    shortDesc = u"""Better estimate then averaging out, Tsang (1991) Chemical kinetic data base for combustion chemistry. Part V. Propene Literature review""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+    ],
+)
+
+entry(
+    index = 3000,
+    label = "H_rad;SsJ-H",
+    group1 = 
+"""
+1 * H 1
+""",
+    group2 = 
+"""
+1 * Ss 1 {2,S}
+2   H  0 {1,S}
+""",
+    kinetics = ArrheniusEP(
+        A = (5770000000000000.0, 'cm^3/(mol*s)'),
+        n = 0,
+        alpha = 0,
+        E0 = (0.43, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    reference = None,
+    referenceType = "",
+    rank = 3,
+    shortDesc = u"""GA Jonas x 3 for spinorbit""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 

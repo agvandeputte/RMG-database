@@ -6,15 +6,15 @@ shortDesc = u""
 longDesc = u"""
 
 """
-recommended = True
+recommended = False
 
 entry(
     index = 1,
     label = "H2",
     molecule = 
 """
-1 H 0 {2,S}
-2 H 0 {1,S}
+1 H 0 0 {2,S}
+2 H 0 0 {1,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -28,7 +28,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
@@ -37,7 +37,7 @@ entry(
     label = "H",
     molecule = 
 """
-1 H 1
+1 H 1 0
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -51,7 +51,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
@@ -60,8 +60,8 @@ entry(
     label = "O2",
     molecule = 
 """
-1 O 1 {2,S}
-2 O 1 {1,S}
+1 O 1 2 {2,S}
+2 O 1 2 {1,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -75,7 +75,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
@@ -84,8 +84,8 @@ entry(
     label = "OH",
     molecule = 
 """
-1 O 1 {2,S}
-2 H 0 {1,S}
+1 O 1 2 {2,S}
+2 H 0 0 {1,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -99,7 +99,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
@@ -108,10 +108,10 @@ entry(
     label = "CO3s1",
     molecule = 
 """
-1 C 0 {2,D} {3,S} {4,S}
-2 O 0 {1,D}
-3 O 0 {1,S} {4,S}
-4 O 0 {1,S} {3,S}
+1 C 0 0 {2,D} {3,S} {4,S}
+2 O 0 2 {1,D}
+3 O 0 2 {1,S} {4,S}
+4 O 0 2 {1,S} {3,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -125,7 +125,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
@@ -134,10 +134,10 @@ entry(
     label = "CO3t1",
     molecule = 
 """
-1 C 0 {2,D} {3,S} {4,S}
-2 O 0 {1,D}
-3 O 1 {1,S}
-4 O 1 {1,S}
+1 C 0 0 {2,D} {3,S} {4,S}
+2 O 0 2 {1,D}
+3 O 1 2 {1,S}
+4 O 1 2 {1,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -151,7 +151,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
@@ -160,10 +160,10 @@ entry(
     label = "CO3t2",
     molecule = 
 """
-1 C 1 {2,D} {3,S}
-2 O 0 {1,D}
-3 O 0 {1,S} {4,S}
-4 O 1 {3,S}
+1 C 1 0 {2,D} {3,S}
+2 O 0 2 {1,D}
+3 O 0 2 {1,S} {4,S}
+4 O 1 2 {3,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -177,7 +177,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
@@ -186,11 +186,11 @@ entry(
     label = "cyclopropene12diyl",
     molecule = 
 """
-1 C 1 {2,D} {3,S}
-2 C 1 {1,D} {3,S}
-3 C 0 {1,S} {2,S} {4,S} {5,S}
-4 H 0 {3,S}
-5 H 0 {3,S}
+1 C 1 0 {2,D} {3,S}
+2 C 1 0 {1,D} {3,S}
+3 C 0 0 {1,S} {2,S} {4,S} {5,S}
+4 H 0 0 {3,S}
+5 H 0 0 {3,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -204,7 +204,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
@@ -213,10 +213,10 @@ entry(
     label = "cyclopropynylidyne",
     molecule = 
 """
-1 C 0 {2,T} {3,S}
-2 C 0 {1,T} {3,S}
-3 C 1 {1,S} {2,S} {4,S}
-4 H 0 {3,S}
+1 C 0 0 {2,T} {3,S}
+2 C 0 0 {1,T} {3,S}
+3 C 1 0 {1,S} {2,S} {4,S}
+4 H 0 0 {3,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -230,7 +230,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
@@ -239,10 +239,10 @@ entry(
     label = "OCCO(S)",
     molecule = 
 """
-1 O 0 {2,D}
-2 C 0 {1,D} {3,D}
-3 C 0 {2,D} {4,D}
-4 O 0 {3,D}
+1 O 0 2 {2,D}
+2 C 0 0 {1,D} {3,D}
+3 C 0 0 {2,D} {4,D}
+4 O 0 2 {3,D}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -256,7 +256,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
@@ -265,10 +265,10 @@ entry(
     label = "OCCO",
     molecule = 
 """
-1 O 1 {2,S}
-2 C 0 {1,S} {3,T}
-3 C 0 {2,T} {4,S}
-4 O 1 {3,S}
+1 O 1 2 {2,S}
+2 C 0 0 {1,S} {3,T}
+3 C 0 0 {2,T} {4,S}
+4 O 1 2 {3,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -282,7 +282,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
@@ -291,11 +291,11 @@ entry(
     label = "C3H2",
     molecule = 
 """
-1 C 2S {2,S} {3,S}
-2 C 0  {1,S} {3,D} {4,S}
-3 C 0  {1,S} {2,D} {5,S}
-4 H 0  {2,S}
-5 H 0  {3,S}
+1 C 2S 0 {2,S} {3,S}
+2 C 0  0 {1,S} {3,D} {4,S}
+3 C 0  0 {1,S} {2,D} {5,S}
+4 H 0  0 {2,S}
+5 H 0  0 {3,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -309,7 +309,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
@@ -318,8 +318,8 @@ entry(
     label = "S2",
     molecule = 
 """
-1 S 1 {2,S}
-2 S 1 {1,S}
+1 S 1 2 {2,S}
+2 S 1 2 {1,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -333,7 +333,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
@@ -342,9 +342,9 @@ entry(
     label = "HCS",
     molecule = 
 """
-1 C 1 {2,D} {3,S}
-2 S 0 {1,D}
-3 H 0 {1,S}
+1 C 1 0 {2,D} {3,S}
+2 S 0 2 {1,D}
+3 H 0 0 {1,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
@@ -358,537 +358,7 @@ u"""
 
 """,
     history = [
-        ("Thu Nov 15 12:27:50 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
-    ],
-)
-
-entry(
-    index = 15,
-    label = "Ar",
-    molecule = 
-"""
-1 Ar 0
-""",
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(Tmin=(298,"K"), Tmax=(1000,"K"), coeffs=[2.5,0,0,0,0,-745.375,4.366]),
-            NASAPolynomial(Tmin=(1000,"K"), Tmax=(5000,"K"), coeffs=[2.5,0,0,0,0,-745.375,4.366]),
-        ],
-        Tmin = (298,"K"),
-        Tmax = (5000,"K"),
-    ),
-    reference = Reference(authors=["G. P. Smith", "D. M. Golden", "M. Frenklach", "N. W. Moriarty", "B. Eiteneer", "M. Goldenberg", "C. T. Bowman", "R. K. Hanson", "S. Song", "W. C. Gardiner, Jr.", "V. V. Lissianski", "Z. Qin."], title='GRI-Mech 3.0.', year="1999", url="http://www.me.berkeley.edu/gri-mech/version30/text30.html"),
-    referenceType = "review",
-    shortDesc = u"""Copied from GRI-Mech 3.0""",
-    longDesc = 
-u"""
-This was copied from the GRI-Mech3.0 library.
-The official GRI-Mech 3.0 has the minimum temperature on the NASA polynomial at 300K.
-This prevents it from being used to evaluate the standard properties at 298K as required
-by some parts of RMG. Extrapolating 2 degrees beyond the the recommended range probably
-introduces less error than not using the thermo at all, so the range has been extended
-to 298K.
-""",
-    history = [
-        ("Tue May 24 11:29:29 2011","Josh Allen <jwallen@mit.edu>","action","""jwallen added this entry to the database."""),
-        ("Sat Jun 11 11:51:00 2011","Richard West <rwest@mit.edu>","action","""Changed the Tmin from 300K to 298K."""),
-    ],
-)
-
-entry(
-    index = 16,
-    label = "N2",
-    molecule = 
-"""
-1 N 0 {2,T}
-2 N 0 {1,T}
-""",
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(Tmin=(298,"K"), Tmax=(1000,"K"), coeffs=[3.29868,0.00140824,-3.96322e-06,5.64152e-09,-2.44485e-12,-1020.9,3.95037]),
-            NASAPolynomial(Tmin=(1000,"K"), Tmax=(5000,"K"), coeffs=[2.92664,0.00148798,-5.68476e-07,1.0097e-10,-6.75335e-15,-922.798,5.98053]),
-        ],
-        Tmin = (298,"K"),
-        Tmax = (5000,"K"),
-    ),
-    reference = Reference(authors=["G. P. Smith", "D. M. Golden", "M. Frenklach", "N. W. Moriarty", "B. Eiteneer", "M. Goldenberg", "C. T. Bowman", "R. K. Hanson", "S. Song", "W. C. Gardiner, Jr.", "V. V. Lissianski", "Z. Qin."], title='GRI-Mech 3.0.', year="1999", url="http://www.me.berkeley.edu/gri-mech/version30/text30.html"),
-    referenceType = "review",
-    shortDesc = u"""Copied from GRI-Mech 3.0""",
-    longDesc = 
-u"""
-This was copied from the GRI-Mech3.0 library.
-The official GRI-Mech 3.0 has the minimum temperature on the NASA polynomial at 300K.
-This prevents it from being used to evaluate the standard properties at 298K as required
-by some parts of RMG. Extrapolating 2 degrees beyond the the recommended range probably
-introduces less error than not using the thermo at all, so the range has been extended
-to 298K.
-""",
-    history = [
-        ("Tue May 24 11:29:29 2011","Josh Allen <jwallen@mit.edu>","action","""jwallen added this entry to the database."""),
-        ("Sat Jun 11 11:51:00 2011","Richard West <rwest@mit.edu>","action","""Changed the Tmin from 300K to 298K."""),
-    ],
-)
-
-entry(
-    index = 17,
-    label = "He",
-    molecule = 
-"""
-1 He 0
-""",
-    thermo = NASA(
-        polynomials = [
-            NASAPolynomial(Tmin=(200,"K"), Tmax=(1000,"K"), coeffs=[2.5,0,0,0,0,-745.375,0.9287]),
-            NASAPolynomial(Tmin=(1000,"K"), Tmax=(6000,"K"), coeffs=[2.5,0,0,0,0,-745.375,0.9287]),
-        ],
-        Tmin = (200,"K"),
-        Tmax = (6000,"K"),
-    ),
-    reference = None,
-    referenceType = "",
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-    history = [
-        ("Thu Sep 22 15:44:29 2011","Josh Allen <jwallen@mit.edu>","action","""jwallen added this entry to the database."""),
-    ],
-)
-
-entry(
-    index = 18,
-    label = "C(S)",
-    molecule = 
-"""
-1 C 4S 0
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([4.968,4.968,4.968,4.968,4.968,4.968,4.968],'cal/(mol*K)'),
-        H298 = (200.397,'kcal/mol'),
-        S298 = (33.393,'cal/(mol*K)'),
-    ),
-    reference = None,
-    referenceType = "",
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-H298: ATcT version 1.110
-level of theory energy: CCSD(T)F12A/cc-pVQZ-F12//CCSD(T)/cc-pVQZ
-level of theory frequency: B3LYP/6-311++g(d,p)//B3LYP/6-311++g(d,p)
-""",
-    history = [
-        ("Mon Nov 18 10:25:25 2012","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
-    ],
-)
-
-entry(
-    index = 19,
-    label = "C(T)",
-    molecule = 
-"""
-1 C 4T 0
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([4.968,4.968,4.968,4.968,4.968,4.968,4.968],'cal/(mol*K)'),
-        H298 = (171.336,'kcal/mol'),
-        S298 = (35.576,'cal/(mol*K)'),
-    ),
-    reference = None,
-    referenceType = "",
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-H298: ATcT version 1.110
-level of theory energy: CCSD(T)F12A/cc-pVQZ-F12//CCSD(T)/cc-pVQZ
-level of theory frequency: B3LYP/6-311++g(d,p)//B3LYP/6-311++g(d,p)
-""",
-    history = [
-        ("Mon Nov 18 10:25:25 2012","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
-    ],
-)
-
-entry(
-    index = 20,
-    label = "CH2(S)",
-    molecule = 
-"""
-1 C 2S 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([8.089,8.316,8.622,8.990,9.787,10.502,11.832],'cal/(mol*K)'),
-        H298 = (102.541,'kcal/mol'),
-        S298 = (45.197,'cal/(mol*K)'),
-    ),
-    reference = None,
-    referenceType = "",
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-H298: ATcT version 1.110
-level of theory energy: CCSD(T)F12A/cc-pVQZ-F12//CCSD(T)/cc-pVQZ
-level of theory frequency: B3LYP/6-311++g(d,p)//B3LYP/6-311++g(d,p)
-""",
-    history = [
-        ("Mon Nov 18 10:25:25 2012","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
-    ],
-)
-
-entry(
-    index = 21,
-    label = "CH2(T)",
-    molecule = 
-"""
-1 C 2T 0 {2,S} {3,S}
-2 H 0  0 {1,S}
-3 H 0  0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([8.342,8.610,8.914,9.238,9.893,10.500,11.680],'cal/(mol*K)'),
-        H298 = (93.559,'kcal/mol'),
-        S298 = (46.636,'cal/(mol*K)'),
-    ),
-    reference = None,
-    referenceType = "",
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-H298: ATcT version 1.110
-level of theory energy: CCSD(T)F12A/cc-pVQZ-F12//CCSD(T)/cc-pVQZ
-level of theory frequency: B3LYP/6-311++g(d,p)//B3LYP/6-311++g(d,p)
-""",
-    history = [
-        ("Mon Nov 18 10:25:25 2012","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
-    ],
-)
-
-entry(
-    index = 22,
-    label = "CH4",
-    molecule = 
-"""
-1 C 0 0 {2,S} {3,S} {4,S} {5,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-5 H 0 0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([8.621,9.648,10.941,12.344,14.887,16.967,20.535],'cal/(mol*K)'),
-        H298 = (-17.814,'kcal/mol'),
-        S298 = (44.473,'cal/(mol*K)'),
-    ),
-    reference = None,
-    referenceType = "",
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-H298: ATcT version 1.110
-level of theory energy: CCSD(T)F12A/cc-pVQZ-F12//CCSD(T)/cc-pVQZ
-level of theory frequency: B3LYP/6-311++g(d,p)//B3LYP/6-311++g(d,p)
-""",
-    history = [
-        ("Mon Nov 18 10:25:25 2012","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
-    ],
-)
-
-entry(
-    index = 23,
-    label = "NH(T)",
-    molecule = 
-"""
-1 N 2T 1 {2,S}
-2 H 0  0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([6.950,6.945,6.962,7.006,7.173,7.387,7.891],'cal/(mol*K)'),
-        H298 = (85.753,'kcal/mol'),
-        S298 = (43.265,'cal/(mol*K)'),
-    ),
-    reference = None,
-    referenceType = "",
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-H298: ATcT version 1.110
-level of theory energy: CCSD(T)F12A/cc-pVQZ-F12//CCSD(T)/cc-pVQZ
-level of theory frequency: B3LYP/6-311++g(d,p)//B3LYP/6-311++g(d,p)
-""",
-    history = [
-        ("Mon Nov 18 10:25:25 2012","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
-    ],
-)
-
-entry(
-    index = 24,
-    label = "NH2(D)",
-    molecule = 
-"""
-1 N 1 1 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([8.055,8.227,8.467,8.762,9.435,10.083,11.402],'cal/(mol*K)'),
-        H298 = (44.467,'kcal/mol'),
-        S298 = (46.516,'cal/(mol*K)'),
-    ),
-    reference = None,
-    referenceType = "",
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-H298: ATcT version 1.110
-level of theory energy: CCSD(T)F12A/cc-pVQZ-F12//CCSD(T)/cc-pVQZ
-level of theory frequency: B3LYP/6-311++g(d,p)//B3LYP/6-311++g(d,p)
-""",
-    history = [
-        ("Mon Nov 18 10:25:25 2012","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
-    ],
-)
-
-entry(
-    index = 25,
-    label = "NH3",
-    molecule = 
-"""
-1 N 0 1 {2,S} {3,S} {4,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-4 H 0 0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([8.486,9.051,9.737,10.484,11.921,13.163,15.503],'cal/(mol*K)'),
-        H298 = (-10.889,'kcal/mol'),
-        S298 = (45.986,'cal/(mol*K)'),
-    ),
-    reference = None,
-    referenceType = "",
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-H298: ATcT version 1.110
-level of theory energy: CCSD(T)F12A/cc-pVQZ-F12//CCSD(T)/cc-pVQZ
-level of theory frequency: B3LYP/6-311++g(d,p)//B3LYP/6-311++g(d,p)
-""",
-    history = [
-        ("Mon Nov 18 10:25:25 2012","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
-    ],
-)
-
-entry(
-    index = 26,
-    label = "O(S)",
-    molecule = 
-"""
-1 O 2S 2
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([4.968,4.968,4.968,4.968,4.968,4.968,4.968],'cal/(mol*K)'),
-        H298 = (104.810,'kcal/mol'),
-        S298 = (34.250,'cal/(mol*K)'),
-    ),
-    reference = None,
-    referenceType = "",
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-H298: ATcT version 1.110
-level of theory energy: CCSD(T)F12A/cc-pVQZ-F12//CCSD(T)/cc-pVQZ
-level of theory frequency: B3LYP/6-311++g(d,p)//B3LYP/6-311++g(d,p)
-""",
-    history = [
-        ("Mon Nov 18 10:25:25 2012","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
-    ],
-)
-
-entry(
-    index = 27,
-    label = "O(T)",
-    molecule = 
-"""
-1 O 2T 2
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([4.968,4.968,4.968,4.968,4.968,4.968,4.968],'cal/(mol*K)'),
-        H298 = (59.567,'kcal/mol'),
-        S298 = (36.433,'cal/(mol*K)'),
-    ),
-    reference = None,
-    referenceType = "",
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-H298: ATcT version 1.110
-level of theory energy: CCSD(T)F12A/cc-pVQZ-F12//CCSD(T)/cc-pVQZ
-level of theory frequency: B3LYP/6-311++g(d,p)//B3LYP/6-311++g(d,p)
-""",
-    history = [
-        ("Mon Nov 18 10:25:25 2012","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
-    ],
-)
-
-entry(
-    index = 28,
-    label = "OH(D)",
-    molecule = 
-"""
-1 O 1 2 {2,S}
-2 H 0 0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([6.954,6.946,6.951,6.973,7.080,7.251,7.719],'cal/(mol*K)'),
-        H298 = (8.863,'kcal/mol'),
-        S298 = (43.958,'cal/(mol*K)'),
-    ),
-    reference = None,
-    referenceType = "",
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-H298: ATcT version 1.110
-level of theory energy: CCSD(T)F12A/cc-pVQZ-F12//CCSD(T)/cc-pVQZ
-level of theory frequency: B3LYP/6-311++g(d,p)//B3LYP/6-311++g(d,p)
-""",
-    history = [
-        ("Mon Nov 18 10:25:25 2012","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
-    ],
-)
-
-entry(
-    index = 29,
-    label = "H2O",
-    molecule = 
-"""
-1 O 0 2 {2,S} {3,S}
-2 H 0 0 {1,S}
-3 H 0 0 {1,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([8.038,8.180,8.379,8.624,9.195,9.766,11.019],'cal/(mol*K)'),
-        H298 = (-57.797,'kcal/mol'),
-        S298 = (45.084,'cal/(mol*K)'),
-    ),
-    reference = None,
-    referenceType = "",
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-H298: ATcT version 1.110
-level of theory energy: CCSD(T)F12A/cc-pVQZ-F12//CCSD(T)/cc-pVQZ
-level of theory frequency: B3LYP/6-311++g(d,p)//B3LYP/6-311++g(d,p)
-""",
-    history = [
-        ("Mon Nov 18 10:25:25 2012","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
-    ],
-)
-
-
-
-entry(
-    index = 30,
-    label = "Cl2",
-    molecule = 
-"""
-1     Cl    0 {2,S}
-2     Cl    0 {1,S}
-""",
-    thermo = NASA(
-        polynomials=[
-            NASAPolynomial(Tmin=(200,"K"), Tmax=(1000,"K"), coeffs=[2.73638,0.00783526,-1.45105e-05,1.25731e-08,-4.13247e-12,-1058.8,9.44557]),
-            NASAPolynomial(Tmin=(1000,"K"), Tmax=(6000,"K"), coeffs=[4.74728,-0.000488582,2.68445e-07,-2.43476e-11,-1.03683e-15,-1511.02,-0.344539]),
-        ],
-        Tmin = (200,"K"),
-        Tmax = (6000,"K"),
-    ),
-    reference = None,
-    referenceType = "",
-    shortDesc = u"""Burcat Thermo Data""",
-    longDesc = 
-u"""
-Burcat Thermo Data
-
-REFERENCE ELEMENT REF=Gurvich 1989 V1 py.1 p.177 HF298=0.00 kcal Max Lst 
-Sq Error Cp @ 6000 **1.26%** (Cp @ 700 K 0.08%)
-""",
-    history = [
-        ("Tue Sep 17 12:44:29 2013","Connie Gao <connieg@mit.edu>","action","""connieg added this entry to the database."""),
-    ],
-)
-
-entry(
-    index = 31,
-    label = "Cl",
-    molecule = 
-"""
-1     Cl    1
-""",
-    thermo = NASA(
-        polynomials=[
-            NASAPolynomial(Tmin=(200,"K"), Tmax=(1000,"K"), coeffs=[2.26062,0.00154154,-6.80284e-07,-1.59973e-09,1.15417e-12,13855.3,6.57021]),
-            NASAPolynomial(Tmin=(1000,"K"), Tmax=(6000,"K"), coeffs=[2.94658,-0.000385985,1.36139e-07,-2.17033e-11,1.28751e-15,13697,3.1133]),
-        ],
-        Tmin = (200,"K"),
-        Tmax = (6000,"K"),
-    ),
-    reference = None,
-    referenceType = "",
-    shortDesc = u"""Burcat Thermo Data""",
-    longDesc = 
-u"""
-Burcat Thermo Data
-
-HF298=121.302+/-0.008 kJ HF0=119.633+/- 0.008 kJ  REF=JANAF  {HF298=121.302
-+/-0.002 kJ  REF=ATcT A}
-""",
-    history = [
-        ("Tue Sep 17 12:44:29 2013","Connie Gao <connieg@mit.edu>","action","""connieg added this entry to the database."""),
-    ],
-)
-
-entry(
-    index = 32,
-    label = "HCl",
-    molecule = 
-"""
-1     Cl    0 {2,S}
-2     H     0 {1,S}
-""",
-    thermo = NASA(
-        polynomials=[
-            NASAPolynomial(Tmin=(200,"K"), Tmax=(1000,"K"), coeffs=[3.46376,0.000476484,-2.00301e-06,3.31714e-09,-1.44958e-12,-12144.4,2.66428]),
-            NASAPolynomial(Tmin=(1000,"K"), Tmax=(6000,"K"), coeffs=[2.75758,0.00145387,-4.79647e-07,7.77909e-11,-4.79574e-15,-11913.8,6.52197]),
-        ],
-        Tmin = (200,"K"),
-        Tmax = (6000,"K"),
-    ),
-    reference = None,
-    referenceType = "",
-    shortDesc = u"""Burcat Thermo Data""",
-    longDesc = 
-u"""
-Burcat Thermo Data
-
-HYDROCHLORIC ACID CALCULATED FROM ORIGINAL TABLES  REF=Gurvich 1989
-HF298=-92.31 kJ {HF298=-92.17+/-0.006 kJ   REF=ATcT C}  Max Lst Sq Error Cp @ 
-6000 K 0.17%
-""",
-    history = [
-        ("Tue Sep 17 12:44:29 2013","Connie Gao <connieg@mit.edu>","action","""connieg added this entry to the database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 

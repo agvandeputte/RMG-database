@@ -79,9 +79,9 @@ entry(
     label = "R3",
     group = 
 """
-1 *1 {Cs,Cd,CO,Os,Ss,N3s} 1 {2,{S,D}}
-2 *3 {Cs,Cd,CO,Os,Ss,N3s} 0 {1,{S,D}} {3,{S,D}}
-3 *2 {Cs,Cd,CO,Os,Ss,N3s} 1 {2,{S,D}}
+1 *1 {Cs,Cd,CO,Os,Ss} 1 {2,{S,D}}
+2 *3 {Cs,Cd,CO,Os,Ss} 0 {1,{S,D}} {3,{S,D}}
+3 *2 {Cs,Cd,CO,Os,Ss} 1 {2,{S,D}}
 """,
     kinetics = None,
     reference = None,
@@ -93,6 +93,7 @@ u"""
 """,
     history = [
         ("Thu Nov 15 16:45:30 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -145,10 +146,10 @@ entry(
     label = "R4",
     group = 
 """
-1 *1 {Cs,Cd,CO,Os,Ss,N3s} 1 {2,{S,D}}
-2 *3 {Cs,Cd,CO,Os,Ss,N3s} 0 {1,{S,D}} {3,{S,D}}
-3 *4 {Cs,Cd,CO,Os,Ss,N3s} 0 {2,{S,D}} {4,{S,D}}
-4 *2 {Cs,Cd,CO,Os,Ss,N3s} 1 {3,{S,D}}
+1 *1 {Cs,Cd,CO,Os,Ss} 1 {2,{S,D}}
+2 *3 {Cs,Cd,CO,Os,Ss} 0 {1,{S,D}} {3,{S,D}}
+3 *4 {Cs,Cd,CO,Os,Ss} 0 {2,{S,D}} {4,{S,D}}
+4 *2 {Cs,Cd,CO,Os,Ss} 1 {3,{S,D}}
 """,
     kinetics = None,
     reference = None,
@@ -160,6 +161,7 @@ u"""
 """,
     history = [
         ("Thu Nov 15 16:45:30 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -260,11 +262,11 @@ entry(
     label = "R5",
     group = 
 """
-1 *1 {Cs,Cd,CO,Os,Ss,N3s} 1 {2,{S,D}}
-2 *3 {Cs,Cd,CO,Os,Ss,N3s} 0 {1,{S,D}} {3,{S,D}}
-3    {Cs,Cd,CO,Os,Ss,N3s} 0 {2,{S,D}} {4,{S,D}}
-4 *4 {Cs,Cd,CO,Os,Ss,N3s} 0 {3,{S,D}} {5,{S,D}}
-5 *2 {Cs,Cd,CO,Os,Ss,N3s} 1 {4,{S,D}}
+1 *1 {Cs,Cd,CO,Os,Ss} 1 {2,{S,D}}
+2 *3 {Cs,Cd,CO,Os,Ss} 0 {1,{S,D}} {3,{S,D}}
+3    {Cs,Cd,CO,Os,Ss} 0 {2,{S,D}} {4,{S,D}}
+4 *4 {Cs,Cd,CO,Os,Ss} 0 {3,{S,D}} {5,{S,D}}
+5 *2 {Cs,Cd,CO,Os,Ss} 1 {4,{S,D}}
 """,
     kinetics = None,
     reference = None,
@@ -276,6 +278,7 @@ u"""
 """,
     history = [
         ("Thu Nov 15 16:45:30 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
@@ -404,12 +407,12 @@ entry(
     label = "R6",
     group = 
 """
-1 *1 {Cs,Cd,CO,Os,Ss,N3s} 1 {2,{S,D}}
-2 *3 {Cs,Cd,CO,Os,Ss,N3s} 0 {1,{S,D}} {3,{S,D}}
-3    {Cs,Cd,CO,Os,Ss,N3s} 0 {2,{S,D}} {4,{S,D}}
-4    {Cs,Cd,CO,Os,Ss,N3s} 0 {3,{S,D}} {5,{S,D}}
-5 *4 {Cs,Cd,CO,Os,Ss,N3s} 0 {4,{S,D}} {6,{S,D}}
-6 *2 {Cs,Cd,CO,Os,Ss,N3s} 1 {5,{S,D}}
+1 *1 {Cs,Cd,CO,Os,Ss} 1 {2,{S,D}}
+2 *3 {Cs,Cd,CO,Os,Ss} 0 {1,{S,D}} {3,{S,D}}
+3    {Cs,Cd,CO,Os,Ss} 0 {2,{S,D}} {4,{S,D}}
+4    {Cs,Cd,CO,Os,Ss} 0 {3,{S,D}} {5,{S,D}}
+5 *4 {Cs,Cd,CO,Os,Ss} 0 {4,{S,D}} {6,{S,D}}
+6 *2 {Cs,Cd,CO,Os,Ss} 1 {5,{S,D}}
 """,
     kinetics = None,
     reference = None,
@@ -421,6 +424,7 @@ u"""
 """,
     history = [
         ("Thu Nov 15 16:45:30 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
