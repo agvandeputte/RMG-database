@@ -12183,7 +12183,7 @@ entry(
 4    H  0 {1,S}
 """,
     kinetics = ArrheniusEP(
-        A = (207000000000000.0, 's^-1'),
+        A = (20700, 's^-1'),
         n = 1.78,
         alpha = 0,
         E0 = (5.35, 'kcal/mol'),
@@ -12242,6 +12242,7 @@ u"""
 """,
     history = [
         ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+        ("Thu Feb 13 13:39:30 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> updated this entry by importing the old RMG database."""),
     ],
 )
 
