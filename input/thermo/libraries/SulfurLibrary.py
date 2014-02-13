@@ -3949,48 +3949,12 @@ u"""
 
 """,
     history = [
-        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+        ("Thu Feb 13 13:49:10 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
     index = 126,
-    label = "CH3CHJSC2H5",
-    molecule = 
-"""
-1  C 0 0 {2,S} {6,S} {7,S} {8,S}
-2  C 1 0 {1,S} {3,S} {9,S}
-3  S 0 2 {2,S} {4,S}
-4  C 0 0 {3,S} {5,S} {10,S} {11,S}
-5  C 0 0 {4,S} {12,S} {13,S} {14,S}
-6  H 0 0 {1,S}
-7  H 0 0 {1,S}
-8  H 0 0 {1,S}
-9  H 0 0 {2,S}
-10 H 0 0 {4,S}
-11 H 0 0 {4,S}
-12 H 0 0 {5,S}
-13 H 0 0 {5,S}
-14 H 0 0 {5,S}
-""",
-    thermo = ThermoData(
-        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([27.9,33.61,38.72,43.08,50,55.25,63.58],'cal/(mol*K)','+|-',[1,1,1,1,1,1,1]),
-        H298 = (20.7,'kcal/mol','+|-',1),
-        S298 = (90.99,'cal/(mol*K)','+|-',1),
-    ),
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-    history = [
-        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
-    ],
-)
-
-entry(
-    index = 127,
     label = "CH2OHSH",
     molecule = 
 """
@@ -4014,12 +3978,12 @@ u"""
 
 """,
     history = [
-        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+        ("Thu Feb 13 13:49:10 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 128,
+    index = 127,
     label = "CHCH3OHSH",
     molecule = 
 """
@@ -4046,12 +4010,12 @@ u"""
 
 """,
     history = [
-        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+        ("Thu Feb 13 13:49:10 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 129,
+    index = 128,
     label = "CH2OHSJ",
     molecule = 
 """
@@ -4074,12 +4038,12 @@ u"""
 
 """,
     history = [
-        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+        ("Thu Feb 13 13:49:10 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 130,
+    index = 129,
     label = "CHCH3OHSJ",
     molecule = 
 """
@@ -4105,12 +4069,12 @@ u"""
 
 """,
     history = [
-        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+        ("Thu Feb 13 13:49:10 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 131,
+    index = 130,
     label = "CHOHS",
     molecule = 
 """
@@ -4132,12 +4096,12 @@ u"""
 
 """,
     history = [
-        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+        ("Thu Feb 13 13:49:10 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 132,
+    index = 131,
     label = "CHOSH",
     molecule = 
 """
@@ -4159,12 +4123,12 @@ u"""
 
 """,
     history = [
-        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+        ("Thu Feb 13 13:49:10 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 133,
+    index = 132,
     label = "CHOSJ",
     molecule = 
 """
@@ -4185,12 +4149,12 @@ u"""
 
 """,
     history = [
-        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+        ("Thu Feb 13 13:49:10 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 134,
+    index = 133,
     label = "COS",
     molecule = 
 """
@@ -4210,12 +4174,12 @@ u"""
 
 """,
     history = [
-        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+        ("Thu Feb 13 13:49:10 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 135,
+    index = 134,
     label = "thiophene",
     molecule = 
 """
@@ -4241,12 +4205,12 @@ u"""
 
 """,
     history = [
-        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+        ("Thu Feb 13 13:49:10 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 136,
+    index = 135,
     label = "DHTP-2-ol",
     molecule = 
 """
@@ -4273,12 +4237,12 @@ u"""
 
 """,
     history = [
-        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+        ("Thu Feb 13 13:49:10 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 137,
+    index = 136,
     label = "DHTP-3-ol",
     molecule = 
 """
@@ -4305,12 +4269,12 @@ u"""
 
 """,
     history = [
-        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+        ("Thu Feb 13 13:49:10 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 138,
+    index = 137,
     label = "benzaldehyde",
     molecule = 
 """
@@ -4341,12 +4305,12 @@ u"""
 
 """,
     history = [
-        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+        ("Thu Feb 13 13:49:10 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 139,
+    index = 138,
     label = "benzenethial",
     molecule = 
 """
@@ -4377,12 +4341,12 @@ u"""
 
 """,
     history = [
-        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+        ("Thu Feb 13 13:49:10 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 140,
+    index = 139,
     label = "PhCHOHSH",
     molecule = 
 """
@@ -4416,12 +4380,12 @@ u"""
 
 """,
     history = [
-        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+        ("Thu Feb 13 13:49:10 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 141,
+    index = 140,
     label = "cyc-C6H10",
     molecule = 
 """
@@ -4454,12 +4418,12 @@ u"""
 
 """,
     history = [
-        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+        ("Thu Feb 13 13:49:10 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 142,
+    index = 141,
     label = "cyc-C6H9J-3",
     molecule = 
 """
@@ -4491,12 +4455,12 @@ u"""
 
 """,
     history = [
-        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+        ("Thu Feb 13 13:49:10 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 143,
+    index = 142,
     label = "cyc-C6H9J-4",
     molecule = 
 """
@@ -4528,12 +4492,12 @@ u"""
 
 """,
     history = [
-        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+        ("Thu Feb 13 13:49:10 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 144,
+    index = 143,
     label = "cyc-C6H8",
     molecule = 
 """
@@ -4564,12 +4528,12 @@ u"""
 
 """,
     history = [
-        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+        ("Thu Feb 13 13:49:10 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 145,
+    index = 144,
     label = "cyc-C6H7J",
     molecule = 
 """
@@ -4599,12 +4563,12 @@ u"""
 
 """,
     history = [
-        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+        ("Thu Feb 13 13:49:10 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 146,
+    index = 145,
     label = "benzene",
     molecule = 
 """
@@ -4633,12 +4597,12 @@ u"""
 
 """,
     history = [
-        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+        ("Thu Feb 13 13:49:10 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 147,
+    index = 146,
     label = "toluene",
     molecule = 
 """
@@ -4670,12 +4634,12 @@ u"""
 
 """,
     history = [
-        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+        ("Thu Feb 13 13:49:10 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
 entry(
-    index = 148,
+    index = 147,
     label = "benzyl",
     molecule = 
 """
@@ -4706,7 +4670,7 @@ u"""
 
 """,
     history = [
-        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+        ("Thu Feb 13 13:49:10 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
     ],
 )
 
