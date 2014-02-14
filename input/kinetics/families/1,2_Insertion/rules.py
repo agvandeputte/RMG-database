@@ -290,7 +290,8 @@ entry(
     shortDesc = u"""CBS-QB3 calculations by Franklin, 2010""",
     longDesc = 
 u"""
-
+CBS-QB3 calculations by CFG, Jan 2010 
+Methyl group was hindered rotor. ester CO bond also a rotor.
 """,
     history = [
         ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
