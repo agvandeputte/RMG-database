@@ -21,7 +21,7 @@ recipe(actions=[
 entry(
     index = 1,
     label = "elec_def",
-    group = "OR{carbene, me_carbene, dime_carbene, ph_carbene, o_atom}",
+    group = "OR{carbene, me_carbene, dime_carbene, ph_carbene, o_atom, imidogen}",
     kinetics = None,
     reference = None,
     referenceType = "",
@@ -185,8 +185,8 @@ entry(
     label = "mb_carbonyl",
     group = 
 """
-1 *1 {CO,Cdd} 0 {2,D}
-2 *2 O        0 {1,D}
+1 *1 {CO,Cdd,N} 0 {2,D}
+2 *2 {O,N}        0 {1,D}
 """,
     kinetics = None,
     reference = None,
@@ -345,8 +345,8 @@ entry(
     label = "mb_db",
     group = 
 """
-1 *1 {Cd,Cdd} 0 {2,D}
-2 *2 {Cd,Cdd} 0 {1,D}
+1 *1 {Cd,Cdd,N} 0 {2,D}
+2 *2 {Cd,Cdd,N} 0 {1,D}
 """,
     kinetics = None,
     reference = None,
@@ -1065,8 +1065,8 @@ entry(
     label = "mb_tb",
     group = 
 """
-1 *1 Ct 0 {2,T}
-2 *2 Ct 0 {1,T}
+1 *1 {Ct,N} 0 {2,T}
+2 *2 {Ct,N} 0 {1,T}
 """,
     kinetics = None,
     reference = None,
@@ -1196,6 +1196,27 @@ u"""
     ],
 )
 
+entry(
+    index = 45,
+    label = "imidogen",
+    group = 
+"""
+1 *3 N3s {2S,2T} {2,S}
+2    H   0       {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+    ],
+)
+
 tree(
 """
 L1: elec_def
@@ -1204,6 +1225,7 @@ L1: elec_def
     L2: me_carbene
     L2: ph_carbene
     L2: dime_carbene
+    L2: imidogen
 L1: multiplebond
     L2: mb_carbonyl
         L3: mb_carbonyl_2H
