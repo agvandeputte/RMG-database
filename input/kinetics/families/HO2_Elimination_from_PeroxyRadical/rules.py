@@ -689,7 +689,7 @@ entry(
 9    {Cs,O} 0 {2,S}
 """,
     kinetics = ArrheniusEP(
-        A = (36.6, 's^-1'),
+        A = (36600000000.0, 's^-1'),
         n = 0.62,
         alpha = 0,
         E0 = (30.1, 'kcal/mol'),
