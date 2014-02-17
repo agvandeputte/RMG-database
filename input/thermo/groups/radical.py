@@ -6896,6 +6896,75 @@ u"""
     ],
 )
 
+entry(
+    index = 300,
+    label = "CsJN",
+   group =
+"""
+1 * C 1 {2,S} {3,S} {4,S}
+2   N 0 {1,S}
+3   H 0 {1,S}
+4   H 0 {1,S}
+""",
+    thermo = u'CCsJN',
+    shortDesc = u"""""",
+    longDesc =
+u"""
+ 
+""",
+    history = [
+        ("Wed Feb 12 16pm 2014","AG Vandeputte <agvdeput@mit.edu>","action","""Calculated CBS-QB3, 1D-HR on B3LYP/6-31G(d)"""),
+    ],
+)
+ 
+entry(
+    index = 301,
+    label = "CCsJN",
+    group =
+"""
+1 * C 1 {2,S} {3,S} {4,S}
+2   N 0 {1,S}
+3   C 0 {1,S}
+4   H 0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([0.2,-0.7,-1.4,-1.9,-2.8,-3.4,-4.5],'cal/(mol*K)'),
+        H298 = (92.1,'kcal/mol'),
+        S298 = (2.5,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc =
+u"""
+ 
+""",
+    history = [
+        ("Wed Feb 12 16pm 2014","AG Vandeputte <agvdeput@mit.edu>","action","""Calculated CBS-QB3, 1D-HR on B3LYP/6-31G(d)"""),
+    ],
+)
+ 
+entry(
+    index = 302,
+    label = "C2CsJN",
+    group =
+"""
+1 * C 1 {2,S} {3,S} {4,S}
+2   N 0 {1,S}
+3   C 0 {1,S}
+4   C 0 {1,S}
+""",
+    thermo = u'CCsJN',
+    shortDesc = u"""""",
+    longDesc =
+u"""
+ 
+""",
+    history = [
+        ("Wed Feb 12 16pm 2014","AG Vandeputte <agvdeput@mit.edu>","action","""Calculated CBS-QB3, 1D-HR on B3LYP/6-31G(d)"""),
+    ],
+)
+ 
+ 
 tree(
 """
 L1: Radical
@@ -7067,6 +7136,9 @@ L1: Radical
                         L7: CsJ-CdSsSs
                         L7: CsJ-C=SSsSs
                 L5: CsJ-SsSsSs
+                L5: CsJN
+                L5: CCsJN
+                L5: C2CsJN
             L4: CdsJ
                 L5: CdsJO
                     L6: HCdsJO
