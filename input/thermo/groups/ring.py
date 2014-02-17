@@ -366,7 +366,7 @@ entry(
         H298 = (52.44,'kcal/mol'),
         S298 = (34.28,'cal/(mol*K)'),
     ),
-    shortDesc = u"""CBS-QB3 GA 1D-HR Aaron Vandeputte 20009""",
+    shortDesc = u"""CBS-QB3 GA 1D-HR Aaron Vandeputte 2009""",
     longDesc = 
 u"""
 
@@ -3800,6 +3800,112 @@ u"""
     ],
 )
 
+entry(
+    index = 92,
+    label = "Ethyleneimine",
+    group = 
+"""
+1  * N3s 0 {2,S} {3,S}
+2    Cs  0 {1,S} {3,S}
+3    Cs  0 {1,S} {2,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([0,0,0,0,0,0,0],'cal/(mol*K)'),
+        H298 = (27.7,'kcal/mol'),
+        S298 = (31.6,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""Ethyleneimine ring BENSON""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Added by Beat Buesser <bbuesser@mit.edu>"),
+    ],
+)
+
+entry(
+    index = 93,
+    label = "Azetidine",
+    group = 
+"""
+1  * N3s 0 {2,S} {4,S}
+2    Cs  0 {1,S} {3,S}
+3    Cs  0 {2,S} {4,S}
+4    Cs  0 {1,S} {3,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([0,0,0,0,0,0,0],'cal/(mol*K)'),
+        H298 = (26.2,'kcal/mol'),
+        S298 = (29.3,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""Azetidine ring BENSON""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Added by Beat Buesser <bbuesser@mit.edu>"),
+    ],
+)
+
+entry(
+    index = 94,
+    label = "Pyrrolidine",
+    group = 
+"""
+1  * N3s 0 {2,S} {5,S}
+2    Cs  0 {1,S} {3,S}
+3    Cs  0 {2,S} {4,S}
+4    Cs  0 {3,S} {5,S}
+5    Cs  0 {1,S} {4,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([-6.17,-5.58,-4.80,-4.00,-2.87,-2.17,0],'cal/(mol*K)'),
+        H298 = (6.8,'kcal/mol'),
+        S298 = (26.7,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""Pyrrolidine ring BENSON""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Added by Beat Buesser <bbuesser@mit.edu>"),
+    ],
+)
+
+entry(
+    index = 95,
+    label = "Piperidine",
+    group = 
+"""
+1  * N3s 0 {2,S} {6,S}
+2    Cs  0 {1,S} {3,S}
+3    Cs  0 {2,S} {4,S}
+4    Cs  0 {3,S} {5,S}
+5    Cs  0 {4,S} {6,S}
+6    Cs  0 {1,S} {5,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([-6.17,-5.58,-4.80,-4.00,-2.87,-2.17,0],'cal/(mol*K)'),
+        H298 = (6.8,'kcal/mol'),
+        S298 = (26.7,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""Piperidine ring BENSON""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Added by Beat Buesser <bbuesser@mit.edu>"),
+    ],
+)
+
 tree(
 """
 L1: Ring
@@ -3823,6 +3929,7 @@ L1: Ring
         L3: methylenecyclopropanone
         L3: methyleneoxirane
         L3: 12Methylenecyclopropane
+        L3: Ethyleneimine
     L2: FourMember
         L3: Cyclobutane
         L3: Cyclobutene
@@ -3841,6 +3948,7 @@ L1: Ring
         L3: methylenecyclobutane
         L3: 2methyleneoxetane
         L3: 12methylenecyclobutane
+        L3: Azetidine
     L2: FiveMember
         L3: Cyclopentane
         L3: Cyclopentene
@@ -3873,6 +3981,7 @@ L1: Ring
         L3: 3-Methylenecyclopentene
         L3: 4-Methylenecyclopentene
         L3: 12methylenecyclopentane
+        L3: Pyrrolidine
     L2: SixMember
         L3: sixnosidedouble
             L4: Cyclohexane
@@ -3883,6 +3992,7 @@ L1: Ring
             L4: 124trioxane
             L4: 123trioxane
             L4: Oxane
+            L4: Piperidine
         L3: six-sidedoubles
             L4: six-onesidedouble
                 L5: Cyclohexanone
