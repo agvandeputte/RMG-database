@@ -106943,3 +106943,316 @@ u"""
     ],
 )
 
+
+entry(
+    index = 3200,
+    label = "N3t_N3t-CH2_triplet",
+    group1 = 
+"""
+1 *1 N3t 0 {2,T}
+2 *2 N3t 0 {1,T}
+""",
+    group2 = 
+"""
+1 *3 C 2T {2,S} {3,S}
+2    H 0  {1,S}
+3    H 0  {1,S}
+""",
+    kinetics = ArrheniusEP(
+        A = (1.6e+32, 'cm^3/(mol*s)'),
+        n = -7.07,
+        alpha = 0,
+        E0 = (19.97, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    reference = None,
+    referenceType = "",
+    rank = 1,
+    shortDesc = u"Added by Beat Buesser",
+    longDesc = 
+u"""
+Added by Beat Buesser, value for reaction: CH2 + N2 = CH2NN (B&D #22a) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
+""",
+    history = [
+        (""),
+    ],
+)
+
+entry(
+    index = 3201,
+    label = "N3t_N3t-CH_quartet",
+    group1 = 
+"""
+1 *1 N3t 0 {2,T}
+2 *2 N3t 0 {1,T}
+""",
+    group2 = 
+"""
+1 *3 Cs 3 {2,S}
+2    H  0 {1,S}
+""",
+    kinetics = ArrheniusEP(
+        A = (3.6e+28, 'cm^3/(mol*s)'),
+        n = -5.84,
+        alpha = 0,
+        E0 = (2.62, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    reference = None,
+    referenceType = "",
+    rank = 1,
+    shortDesc = u"Added by Beat Buesser",
+    longDesc = 
+u"""
+Added by Beat Buesser, value for reaction: CH + N2 = HCNN (B&D #24a) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
+""",
+    history = [
+        (""),
+    ],
+)
+
+entry(
+    index = 3202,
+    label = "N3d/H_N3d/H-H_rad",
+    group1 = 
+"""
+1 *1 N3d 0 {2,D} {3,S}
+2 *2 N3d 0 {1,D} {4,S}
+3    H   0 {1,S}
+4    H   0 {2,S}
+""",
+    group2 = 
+"""
+1 *3 H 1
+""",
+    kinetics = ArrheniusEP(
+        A = (9.91e+34, 'cm^3/(mol*s)'),
+        n = -7.67,
+        alpha = 0,
+        E0 = (12.56, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    reference = None,
+    referenceType = "",
+    rank = 1,
+    shortDesc = u"Added by Beat Buesser",
+    longDesc = 
+u"""
+Added by Beat Buesser, value for reaction: N2H2 + H = N2H3 (B&D #31a) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
+""",
+    history = [
+        (""),
+    ],
+)
+
+entry(
+    index = 3203,
+    label = "Ct/H_N3t-O_pri_rad",
+    group1 = 
+"""
+1 *1 Ct  0 {2,T} {3,S}
+2 *2 N3t 0 {1,T}
+3    H   0 {1,S}
+""",
+    group2 = 
+"""
+1 *3 O 1 {2,S}
+2    H 0 {1,S}
+""",
+    kinetics = ArrheniusEP(
+        A = (2.8e+30, 'cm^3/(mol*s)'),
+        n = -6.37,
+        alpha = 0,
+        E0 = (5.34, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    reference = None,
+    referenceType = "",
+    rank = 1,
+    shortDesc = u"Added by Beat Buesser",
+    longDesc = 
+u"""
+Added by Beat Buesser, value for reaction: HCN + OH = NCHOH (B&D #42b4) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
+""",
+    history = [
+        (""),
+    ],
+)
+
+entry(
+    index = 3204,
+    label = "Ct/H_N3t-H_rad",
+    group1 = 
+"""
+1 *1 Ct  0 {2,T} {3,S}
+2 *2 N3t 0 {1,T}
+3    H   0 {1,S}
+""",
+    group2 = 
+"""
+1 *3 H 1
+""",
+    kinetics = ArrheniusEP(
+        A = (7.24e+29, 'cm^3/(mol*s)'),
+        n = -6.87,
+        alpha = 0,
+        E0 = (7.46, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    reference = None,
+    referenceType = "",
+    rank = 1,
+    shortDesc = u"Added by Beat Buesser",
+    longDesc = 
+u"""
+Added by Beat Buesser, value for reaction: HCN + H = H2CN (B&D #45a) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
+""",
+    history = [
+        (""),
+    ],
+)
+
+entry(
+    index = 3205,
+    label = "N3t_Ct/H-H_rad",
+    group1 = 
+"""
+1 *1 N3t 0 {2,T}
+2 *2 Ct  0 {1,T} {3,S}
+3    H   0 {2,S}
+""",
+    group2 = 
+"""
+1 *3 H 1
+""",
+    kinetics = ArrheniusEP(
+        A = (7.24e+29, 'cm^3/(mol*s)'),
+        n = -6.87,
+        alpha = 0,
+        E0 = (7.46, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    reference = None,
+    referenceType = "",
+    rank = 1,
+    shortDesc = u"Added by Beat Buesser",
+    longDesc = 
+u"""
+Added by Beat Buesser, value for reaction: HCN + H = HCNH (B&D #46) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
+""",
+    history = [
+        (""),
+    ],
+)
+
+entry(
+    index = 3206,
+    label = "Cds/H2_N3d-H_rad",
+    group1 = 
+"""
+1 *1 Cd  0 {2,D} {3,S} {4,S}
+2 *2 N3d 0 {1,D}
+3    H   0 {1,S}
+4    H   0 {1,S}
+""",
+    group2 = 
+"""
+1 *3 H 1
+""",
+    kinetics = ArrheniusEP(
+        A = (7.32e+29, 'cm^3/(mol*s)'),
+        n = -6.51,
+        alpha = 0,
+        E0 = (8.31, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    reference = None,
+    referenceType = "",
+    rank = 1,
+    shortDesc = u"Added by Beat Buesser",
+    longDesc = 
+u"""
+Added by Beat Buesser, value for reaction: H2CNH + H = CH3NH (B&D #49a) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
+""",
+    history = [
+        (""),
+    ],
+)
+
+entry(
+    index = 3207,
+    label = "N3d/H_Cds/H2-H_rad",
+    group1 = 
+"""
+1 *1 N3d 0 {2,D} {5,S}
+2 *2 Cd  0 {1,D} {3,S} {4,S}
+3    H   0 {2,S}
+4    H   0 {2,S}
+5    H   0 {1,S}
+""",
+    group2 = 
+"""
+1 *3 H 1
+""",
+    kinetics = ArrheniusEP(
+        A = (9.86e+36, 'cm^3/(mol*s)'),
+        n = -8.41,
+        alpha = 0,
+        E0 = (12.44, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    reference = None,
+    referenceType = "",
+    rank = 1,
+    shortDesc = u"Added by Beat Buesser",
+    longDesc = 
+u"""
+Added by Beat Buesser, value for reaction: H2CNH + H = CH2NH2 (B&D #50) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
+""",
+    history = [
+        (""),
+    ],
+)
+
+entry(
+    index = 3208,
+    label = "N3t_Ct/H-O_atom_triplet",
+    group1 = 
+"""
+1 *1 N3t 0 {2,T}
+2 *2 Ct  0 {1,T} {3,S}
+3    H   0 {2,S}
+""",
+    group2 = 
+"""
+1 *3 O 2T
+""",
+    kinetics = ArrheniusEP(
+        A = (9.99e+25, 'cm^3/(mol*s)'),
+        n = -5.73,
+        alpha = 0,
+        E0 = (11.80, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    reference = None,
+    referenceType = "",
+    rank = 1,
+    shortDesc = u"Added by Beat Buesser",
+    longDesc = 
+u"""
+Added by Beat Buesser, value for reaction: HCN + O = HCNO (B&D #54) in 'Gas-Phase Combustion Chemistry' (ISBN: 978-1-4612-7088-1), chapter 2, 'Combustion Chemistry of Nitrogen', Anthony M. Dean, Joseph W. Bozzelli",
+""",
+    history = [
+        (""),
+    ],
+)
+

@@ -21,7 +21,7 @@ recipe(actions=[
 entry(
     index = 1,
     label = "R_R",
-    group = "OR{Cd_R, Ct_R, Od_R, Sd_R}",
+    group = "OR{Cd_R, Ct_R, Od_R, Sd_R, Nd_R, Nt_R}",
     kinetics = None,
     reference = None,
     referenceType = "",
@@ -38,7 +38,7 @@ u"""
 entry(
     index = 2,
     label = "YJ",
-    group = "OR{HJ, CJ, O_rad, SJ, Y_1centerbirad}",
+    group = "OR{HJ, CJ, OJ, SJ, NJ, Y_1centerbirad, Y_1centertrirad, Y_1centerquadrad}",
     kinetics = None,
     reference = None,
     referenceType = "",
@@ -263,7 +263,7 @@ entry(
 1 *1 CO            0 {2,D} {3,S} {4,S}
 2 *2 Od            0 {1,D}
 3    H             0 {1,S}
-4    {Cd,Ct,Cb,CO} 0 {1,S}
+4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 """,
     kinetics = None,
     reference = None,
@@ -309,7 +309,7 @@ entry(
 1 *1 CO            0 {2,D} {3,S} {4,S}
 2 *2 Od            0 {1,D}
 3    {Cs,O}        0 {1,S}
-4    {Cd,Ct,Cb,CO} 0 {1,S}
+4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 """,
     kinetics = None,
     reference = None,
@@ -331,8 +331,8 @@ entry(
 """
 1 *1 CO            0 {2,D} {3,S} {4,S}
 2 *2 Od            0 {1,D}
-3    {Cd,Ct,Cb,CO} 0 {1,S}
-4    {Cd,Ct,Cb,CO} 0 {1,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 """,
     kinetics = None,
     reference = None,
@@ -519,7 +519,7 @@ entry(
 1 *1 Cd            0 {2,D} {3,S} {4,S}
 2 *2 Cdd           0 {1,D} {5,D}
 3    H             0 {1,S}
-4    {Cd,Ct,Cb,CO} 0 {1,S}
+4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 5    C             0 {2,D}
 """,
     kinetics = None,
@@ -665,7 +665,7 @@ entry(
 1 *1 Cd            0 {2,D} {3,S} {4,S}
 2 *2 Cdd           0 {1,D} {5,D}
 3    Cs            0 {1,S}
-4    {Cd,Ct,Cb,CO} 0 {1,S}
+4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 5    C             0 {2,D}
 """,
     kinetics = None,
@@ -810,8 +810,8 @@ entry(
 """
 1 *1 Cd            0 {2,D} {3,S} {4,S}
 2 *2 Cdd           0 {1,D} {5,D}
-3    {Cd,Ct,Cb,CO} 0 {1,S}
-4    {Cd,Ct,Cb,CO} 0 {1,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 5    C             0 {2,D}
 """,
     kinetics = None,
@@ -1303,7 +1303,7 @@ entry(
 1 *1 Cd            0 {2,D} {3,S} {4,S}
 2 *2 Cdd           0 {1,D} {5,D}
 3    H             0 {1,S}
-4    {Cd,Ct,Cb,CO} 0 {1,S}
+4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 5    Od            0 {2,D}
 """,
     kinetics = None,
@@ -1327,7 +1327,7 @@ entry(
 1 *1 Cd            0 {2,D} {3,S} {4,S}
 2 *2 Cdd           0 {1,D} {5,D}
 3    Cs            0 {1,S}
-4    {Cd,Ct,Cb,CO} 0 {1,S}
+4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 5    Od            0 {2,D}
 """,
     kinetics = None,
@@ -1350,8 +1350,8 @@ entry(
 """
 1 *1 Cd            0 {2,D} {3,S} {4,S}
 2 *2 Cdd           0 {1,D} {5,D}
-3    {Cd,Ct,Cb,CO} 0 {1,S}
-4    {Cd,Ct,Cb,CO} 0 {1,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 5    Od            0 {2,D}
 """,
     kinetics = None,
@@ -1494,7 +1494,7 @@ entry(
 1 *1 Cdd           0 {2,D} {3,D}
 2 *2 Cd            0 {1,D} {4,S} {5,S}
 3    C             0 {1,D}
-4    {Cd,Ct,Cb,CO} 0 {2,S}
+4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 5    H             0 {2,S}
 """,
     kinetics = None,
@@ -1640,7 +1640,7 @@ entry(
 1 *1 Cdd           0 {2,D} {3,D}
 2 *2 Cd            0 {1,D} {4,S} {5,S}
 3    C             0 {1,D}
-4    {Cd,Ct,Cb,CO} 0 {2,S}
+4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 5    Cs            0 {2,S}
 """,
     kinetics = None,
@@ -1786,8 +1786,8 @@ entry(
 1 *1 Cdd           0 {2,D} {3,D}
 2 *2 Cd            0 {1,D} {4,S} {5,S}
 3    C             0 {1,D}
-4    {Cd,Ct,Cb,CO} 0 {2,S}
-5    {Cd,Ct,Cb,CO} 0 {2,S}
+4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -2278,7 +2278,7 @@ entry(
 1 *1 Cdd           0 {2,D} {3,D}
 2 *2 Cd            0 {1,D} {4,S} {5,S}
 3    Od            0 {1,D}
-4    {Cd,Ct,Cb,CO} 0 {2,S}
+4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 5    H             0 {2,S}
 """,
     kinetics = None,
@@ -2424,7 +2424,7 @@ entry(
 1 *1 Cdd           0 {2,D} {3,D}
 2 *2 Cd            0 {1,D} {4,S} {5,S}
 3    Od            0 {1,D}
-4    {Cd,Ct,Cb,CO} 0 {2,S}
+4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 5    Cs            0 {2,S}
 """,
     kinetics = None,
@@ -2570,8 +2570,8 @@ entry(
 1 *1 Cdd           0 {2,D} {3,D}
 2 *2 Cd            0 {1,D} {4,S} {5,S}
 3    Od            0 {1,D}
-4    {Cd,Ct,Cb,CO} 0 {2,S}
-5    {Cd,Ct,Cb,CO} 0 {2,S}
+4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -3269,7 +3269,7 @@ entry(
 """
 1 *1 Cd            0 {2,D} {3,S} {4,S}
 2 *2 Sd            0 {1,D}
-3    {Cd,Ct,Cb,CO} 0 {1,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 4    H             0 {1,S}
 """,
     kinetics = None,
@@ -3409,7 +3409,7 @@ entry(
 """
 1 *1 Cd            0 {2,D} {3,S} {4,S}
 2 *2 Sd            0 {1,D}
-3    {Cd,Ct,Cb,CO} 0 {1,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 4    Cs            0 {1,S}
 """,
     kinetics = None,
@@ -3549,8 +3549,8 @@ entry(
 """
 1 *1 Cd            0 {2,D} {3,S} {4,S}
 2 *2 Sd            0 {1,D}
-3    {Cd,Ct,Cb,CO} 0 {1,S}
-4    {Cd,Ct,Cb,CO} 0 {1,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 """,
     kinetics = None,
     reference = None,
@@ -4286,7 +4286,7 @@ entry(
 3    H             0 {1,S}
 4    H             0 {1,S}
 5    R             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -4311,7 +4311,7 @@ entry(
 3    H             0 {1,S}
 4    H             0 {1,S}
 5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -4463,7 +4463,7 @@ entry(
 3    H             0 {1,S}
 4    H             0 {1,S}
 5    Cs            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -4615,7 +4615,7 @@ entry(
 3    H             0 {1,S}
 4    H             0 {1,S}
 5    Os            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -4767,7 +4767,7 @@ entry(
 3    H             0 {1,S}
 4    H             0 {1,S}
 5    Ss            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -4918,8 +4918,8 @@ entry(
 2 *2 Cd            0 {1,D} {5,S} {6,S}
 3    H             0 {1,S}
 4    H             0 {1,S}
-5    {Cd,Ct,Cb,CO} 0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -5632,7 +5632,7 @@ entry(
 3    Cs            0 {1,S}
 4    H             0 {1,S}
 5    R             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -5657,7 +5657,7 @@ entry(
 3    Cs            0 {1,S}
 4    H             0 {1,S}
 5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -5809,7 +5809,7 @@ entry(
 3    Cs            0 {1,S}
 4    H             0 {1,S}
 5    Cs            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -5961,7 +5961,7 @@ entry(
 3    Cs            0 {1,S}
 4    H             0 {1,S}
 5    Os            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -6113,7 +6113,7 @@ entry(
 3    Cs            0 {1,S}
 4    H             0 {1,S}
 5    Ss            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -6264,8 +6264,8 @@ entry(
 2 *2 Cd            0 {1,D} {5,S} {6,S}
 3    Cs            0 {1,S}
 4    H             0 {1,S}
-5    {Cd,Ct,Cb,CO} 0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -6952,7 +6952,7 @@ entry(
 3    Cs            0 {1,S}
 4    Cs            0 {1,S}
 5    R             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -6977,7 +6977,7 @@ entry(
 3    Cs            0 {1,S}
 4    Cs            0 {1,S}
 5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -7129,7 +7129,7 @@ entry(
 3    Cs            0 {1,S}
 4    Cs            0 {1,S}
 5    Cs            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -7281,7 +7281,7 @@ entry(
 3    Cs            0 {1,S}
 4    Cs            0 {1,S}
 5    Os            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -7433,7 +7433,7 @@ entry(
 3    Cs            0 {1,S}
 4    Cs            0 {1,S}
 5    Ss            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -7584,8 +7584,8 @@ entry(
 2 *2 Cd            0 {1,D} {5,S} {6,S}
 3    Cs            0 {1,S}
 4    Cs            0 {1,S}
-5    {Cd,Ct,Cb,CO} 0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -8194,7 +8194,7 @@ entry(
 """
 1 *1 Cd            0 {2,D} {3,S} {4,S}
 2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    {Cd,Ct,Cb,CO} 0 {1,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 4    R             0 {1,S}
 5    R             0 {2,S}
 6    R             0 {2,S}
@@ -8219,7 +8219,7 @@ entry(
 """
 1 *1 Cd            0 {2,D} {3,S} {4,S}
 2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    {Cd,Ct,Cb,CO} 0 {1,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 4    H             0 {1,S}
 5    R             0 {2,S}
 6    R             0 {2,S}
@@ -8522,7 +8522,7 @@ entry(
 3    Ct            0 {1,S}
 4    H             0 {1,S}
 5    R             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -8547,7 +8547,7 @@ entry(
 3    Ct            0 {1,S}
 4    H             0 {1,S}
 5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -8699,7 +8699,7 @@ entry(
 3    Ct            0 {1,S}
 4    H             0 {1,S}
 5    Cs            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -8851,7 +8851,7 @@ entry(
 3    Ct            0 {1,S}
 4    H             0 {1,S}
 5    Os            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -9003,7 +9003,7 @@ entry(
 3    Ct            0 {1,S}
 4    H             0 {1,S}
 5    Ss            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -9154,8 +9154,8 @@ entry(
 2 *2 Cd            0 {1,D} {5,S} {6,S}
 3    Ct            0 {1,S}
 4    H             0 {1,S}
-5    {Cd,Ct,Cb,CO} 0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -9842,7 +9842,7 @@ entry(
 3    Cb            0 {1,S}
 4    H             0 {1,S}
 5    R             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -9867,7 +9867,7 @@ entry(
 3    Cb            0 {1,S}
 4    H             0 {1,S}
 5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -10019,7 +10019,7 @@ entry(
 3    Cb            0 {1,S}
 4    H             0 {1,S}
 5    Cs            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -10171,7 +10171,7 @@ entry(
 3    Cb            0 {1,S}
 4    H             0 {1,S}
 5    Os            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -10323,7 +10323,7 @@ entry(
 3    Cb            0 {1,S}
 4    H             0 {1,S}
 5    Ss            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -10474,8 +10474,8 @@ entry(
 2 *2 Cd            0 {1,D} {5,S} {6,S}
 3    Cb            0 {1,S}
 4    H             0 {1,S}
-5    {Cd,Ct,Cb,CO} 0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -11198,7 +11198,7 @@ entry(
 3    Cd            0 {1,S} {7,D}
 4    H             0 {1,S}
 5    R             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 7    C             0 {3,D}
 """,
     kinetics = None,
@@ -11224,7 +11224,7 @@ entry(
 3    Cd            0 {1,S} {7,D}
 4    H             0 {1,S}
 5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 7    C             0 {3,D}
 """,
     kinetics = None,
@@ -11382,7 +11382,7 @@ entry(
 3    Cd            0 {1,S} {7,D}
 4    H             0 {1,S}
 5    Cs            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 7    C             0 {3,D}
 """,
     kinetics = None,
@@ -11540,7 +11540,7 @@ entry(
 3    Cd            0 {1,S} {7,D}
 4    H             0 {1,S}
 5    Os            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 7    C             0 {3,D}
 """,
     kinetics = None,
@@ -11698,7 +11698,7 @@ entry(
 3    Cd            0 {1,S} {7,D}
 4    H             0 {1,S}
 5    Ss            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 7    C             0 {3,D}
 """,
     kinetics = None,
@@ -11855,8 +11855,8 @@ entry(
 2 *2 Cd            0 {1,D} {5,S} {6,S}
 3    Cd            0 {1,S} {7,D}
 4    H             0 {1,S}
-5    {Cd,Ct,Cb,CO} 0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 7    C             0 {3,D}
 """,
     kinetics = None,
@@ -12307,7 +12307,7 @@ entry(
 """
 1 *1 Cd            0 {2,D} {3,S} {4,S}
 2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    {Cd,Ct,Cb,CO} 0 {1,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 4    Cs            0 {1,S}
 5    R             0 {2,S}
 6    R             0 {2,S}
@@ -12610,7 +12610,7 @@ entry(
 3    Ct            0 {1,S}
 4    Cs            0 {1,S}
 5    R             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -12635,7 +12635,7 @@ entry(
 3    Ct            0 {1,S}
 4    Cs            0 {1,S}
 5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -12787,7 +12787,7 @@ entry(
 3    Ct            0 {1,S}
 4    Cs            0 {1,S}
 5    Cs            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -12939,7 +12939,7 @@ entry(
 3    Ct            0 {1,S}
 4    Cs            0 {1,S}
 5    Os            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -13091,7 +13091,7 @@ entry(
 3    Ct            0 {1,S}
 4    Cs            0 {1,S}
 5    Ss            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -13242,8 +13242,8 @@ entry(
 2 *2 Cd            0 {1,D} {5,S} {6,S}
 3    Ct            0 {1,S}
 4    Cs            0 {1,S}
-5    {Cd,Ct,Cb,CO} 0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -13930,7 +13930,7 @@ entry(
 3    Cb            0 {1,S}
 4    Cs            0 {1,S}
 5    R             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -13955,7 +13955,7 @@ entry(
 3    Cb            0 {1,S}
 4    Cs            0 {1,S}
 5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -14107,7 +14107,7 @@ entry(
 3    Cb            0 {1,S}
 4    Cs            0 {1,S}
 5    Cs            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -14259,7 +14259,7 @@ entry(
 3    Cb            0 {1,S}
 4    Cs            0 {1,S}
 5    Os            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -14411,7 +14411,7 @@ entry(
 3    Cb            0 {1,S}
 4    Cs            0 {1,S}
 5    Ss            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -14562,8 +14562,8 @@ entry(
 2 *2 Cd            0 {1,D} {5,S} {6,S}
 3    Cb            0 {1,S}
 4    Cs            0 {1,S}
-5    {Cd,Ct,Cb,CO} 0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -15286,7 +15286,7 @@ entry(
 3    Cd            0 {1,S} {7,D}
 4    Cs            0 {1,S}
 5    R             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 7    C             0 {3,D}
 """,
     kinetics = None,
@@ -15312,7 +15312,7 @@ entry(
 3    Cd            0 {1,S} {7,D}
 4    Cs            0 {1,S}
 5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 7    C             0 {3,D}
 """,
     kinetics = None,
@@ -15470,7 +15470,7 @@ entry(
 3    Cd            0 {1,S} {7,D}
 4    Cs            0 {1,S}
 5    Cs            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 7    C             0 {3,D}
 """,
     kinetics = None,
@@ -15628,7 +15628,7 @@ entry(
 3    Cd            0 {1,S} {7,D}
 4    Cs            0 {1,S}
 5    Os            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 7    C             0 {3,D}
 """,
     kinetics = None,
@@ -15786,7 +15786,7 @@ entry(
 3    Cd            0 {1,S} {7,D}
 4    Cs            0 {1,S}
 5    Ss            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 7    C             0 {3,D}
 """,
     kinetics = None,
@@ -15943,8 +15943,8 @@ entry(
 2 *2 Cd            0 {1,D} {5,S} {6,S}
 3    Cd            0 {1,S} {7,D}
 4    Cs            0 {1,S}
-5    {Cd,Ct,Cb,CO} 0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 7    C             0 {3,D}
 """,
     kinetics = None,
@@ -16395,7 +16395,7 @@ entry(
 """
 1 *1 Cd            0 {2,D} {3,S} {4,S}
 2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    {Cd,Ct,Cb,CO} 0 {1,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 4    Ss            0 {1,S}
 5    R             0 {2,S}
 6    R             0 {2,S}
@@ -16547,7 +16547,7 @@ entry(
 """
 1 *1 Cd            0 {2,D} {3,S} {4,S}
 2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    {Cd,Ct,Cb,CO} 0 {1,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 4    Os            0 {1,S}
 5    R             0 {2,S}
 6    R             0 {2,S}
@@ -16699,8 +16699,8 @@ entry(
 """
 1 *1 Cd            0 {2,D} {3,S} {4,S}
 2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    {Cd,Ct,Cb,CO} 0 {1,S}
-4    {Cd,Ct,Cb,CO} 0 {1,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 5    R             0 {2,S}
 6    R             0 {2,S}
 """,
@@ -17002,7 +17002,7 @@ entry(
 3    Ct            0 {1,S}
 4    Ct            0 {1,S}
 5    R             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -17027,7 +17027,7 @@ entry(
 3    Ct            0 {1,S}
 4    Ct            0 {1,S}
 5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -17179,7 +17179,7 @@ entry(
 3    Ct            0 {1,S}
 4    Ct            0 {1,S}
 5    Cs            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -17331,7 +17331,7 @@ entry(
 3    Ct            0 {1,S}
 4    Ct            0 {1,S}
 5    Os            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -17483,7 +17483,7 @@ entry(
 3    Ct            0 {1,S}
 4    Ct            0 {1,S}
 5    Ss            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -17634,8 +17634,8 @@ entry(
 2 *2 Cd            0 {1,D} {5,S} {6,S}
 3    Ct            0 {1,S}
 4    Ct            0 {1,S}
-5    {Cd,Ct,Cb,CO} 0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -18458,7 +18458,7 @@ entry(
 3    Cd            0 {1,S} {7,D}
 4    Ct            0 {1,S}
 5    R             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 7    C             0 {3,D}
 """,
     kinetics = None,
@@ -18484,7 +18484,7 @@ entry(
 3    Cd            0 {1,S} {7,D}
 4    Ct            0 {1,S}
 5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 7    C             0 {3,D}
 """,
     kinetics = None,
@@ -18642,7 +18642,7 @@ entry(
 3    Cd            0 {1,S} {7,D}
 4    Ct            0 {1,S}
 5    Cs            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 7    C             0 {3,D}
 """,
     kinetics = None,
@@ -18800,7 +18800,7 @@ entry(
 3    Cd            0 {1,S} {7,D}
 4    Ct            0 {1,S}
 5    Os            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 7    C             0 {3,D}
 """,
     kinetics = None,
@@ -18958,7 +18958,7 @@ entry(
 3    Cd            0 {1,S} {7,D}
 4    Ct            0 {1,S}
 5    Ss            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 7    C             0 {3,D}
 """,
     kinetics = None,
@@ -19115,8 +19115,8 @@ entry(
 2 *2 Cd            0 {1,D} {5,S} {6,S}
 3    Cd            0 {1,S} {7,D}
 4    Ct            0 {1,S}
-5    {Cd,Ct,Cb,CO} 0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 7    C             0 {3,D}
 """,
     kinetics = None,
@@ -19971,7 +19971,7 @@ entry(
 3    Cd            0 {1,S} {7,D}
 4    Cd            0 {1,S} {8,D}
 5    R             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 7    C             0 {3,D}
 8    C             0 {4,D}
 """,
@@ -19998,7 +19998,7 @@ entry(
 3    Cd            0 {1,S} {7,D}
 4    Cd            0 {1,S} {8,D}
 5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 7    C             0 {3,D}
 8    C             0 {4,D}
 """,
@@ -20162,7 +20162,7 @@ entry(
 3    Cd            0 {1,S} {7,D}
 4    Cd            0 {1,S} {8,D}
 5    Cs            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 7    C             0 {3,D}
 8    C             0 {4,D}
 """,
@@ -20326,7 +20326,7 @@ entry(
 3    Cd            0 {1,S} {7,D}
 4    Cd            0 {1,S} {8,D}
 5    Os            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 7    C             0 {3,D}
 8    C             0 {4,D}
 """,
@@ -20490,7 +20490,7 @@ entry(
 3    Cd            0 {1,S} {7,D}
 4    Cd            0 {1,S} {8,D}
 5    Ss            0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 7    C             0 {3,D}
 8    C             0 {4,D}
 """,
@@ -20653,8 +20653,8 @@ entry(
 2 *2 Cd            0 {1,D} {5,S} {6,S}
 3    Cd            0 {1,S} {7,D}
 4    Cd            0 {1,S} {8,D}
-5    {Cd,Ct,Cb,CO} 0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
+5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+6    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 7    C             0 {3,D}
 8    C             0 {4,D}
 """,
@@ -21225,7 +21225,7 @@ entry(
 1 *1 Cd         0 {2,D} {3,S} {4,S}
 2 *2 Cd         0 {1,D} {5,S} {6,S}
 3    O          1 {1,S}
-4    {Cs,Os,Ss} 0 {1,S}
+4    {Cs,Os,Ss,Ns} 0 {1,S}
 5    R          0 {2,S}
 6    R          0 {2,S}
 """,
@@ -21275,7 +21275,7 @@ entry(
 1 *1 Cd            0 {2,D} {3,S} {4,S}
 2 *2 Cd            0 {1,D} {5,S} {6,S}
 3    O             1 {1,S}
-4    {Cd,Ct,Cb,CO} 0 {1,S}
+4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 5    R             0 {2,S}
 6    R             0 {2,S}
 """,
@@ -21435,7 +21435,7 @@ entry(
 1 *1 Ct            0 {2,T} {3,S}
 2 *2 Ct            0 {1,T} {4,S}
 3    H             0 {1,S}
-4    {Cd,Ct,Cb,CO} 0 {2,S}
+4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -21575,7 +21575,7 @@ entry(
 1 *1 Ct            0 {2,T} {3,S}
 2 *2 Ct            0 {1,T} {4,S}
 3    Cs            0 {1,S}
-4    {Cd,Ct,Cb,CO} 0 {2,S}
+4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -21714,7 +21714,7 @@ entry(
 """
 1 *1 Ct            0 {2,T} {3,S}
 2 *2 Ct            0 {1,T} {4,S}
-3    {Cd,Ct,Cb,CO} 0 {1,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 4    H             0 {2,S}
 """,
     kinetics = None,
@@ -21855,7 +21855,7 @@ entry(
 """
 1 *1 Ct            0 {2,T} {3,S}
 2 *2 Ct            0 {1,T} {4,S}
-3    {Cd,Ct,Cb,CO} 0 {1,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 4    Cs            0 {2,S}
 """,
     kinetics = None,
@@ -21996,8 +21996,8 @@ entry(
 """
 1 *1 Ct            0 {2,T} {3,S}
 2 *2 Ct            0 {1,T} {4,S}
-3    {Cd,Ct,Cb,CO} 0 {1,S}
-4    {Cd,Ct,Cb,CO} 0 {2,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -22430,7 +22430,7 @@ entry(
 """
 1 *1 Sd            0 {2,D}
 2 *2 Cd            0 {1,D} {3,S} {4,S}
-3    {Cd,Ct,Cb,CO} 0 {2,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 4    H             0 {2,S}
 """,
     kinetics = None,
@@ -22570,7 +22570,7 @@ entry(
 """
 1 *1 Sd            0 {2,D}
 2 *2 Cd            0 {1,D} {3,S} {4,S}
-3    {Cd,Ct,Cb,CO} 0 {2,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 4    Cs            0 {2,S}
 """,
     kinetics = None,
@@ -22710,8 +22710,8 @@ entry(
 """
 1 *1 Sd            0 {2,D}
 2 *2 Cd            0 {1,D} {3,S} {4,S}
-3    {Cd,Ct,Cb,CO} 0 {2,S}
-4    {Cd,Ct,Cb,CO} 0 {2,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
 """,
     kinetics = None,
     reference = None,
@@ -23484,7 +23484,7 @@ entry(
 """
 1 *3 C      1 {2,D} {3,S}
 2    O      0 {1,D}
-3    {Cs,O} 0 {1,S}
+3    {Cs,Ss,Ns,Os} 0 {1,S}
 """,
     kinetics = None,
     reference = None,
@@ -23507,7 +23507,7 @@ entry(
 """
 1 *3 C             1 {2,D} {3,S}
 2    O             0 {1,D}
-3    {Cd,Ct,Cb,CO} 0 {1,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 """,
     kinetics = None,
     reference = None,
@@ -23920,7 +23920,7 @@ entry(
     group = 
 """
 1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO} 0 {1,S}
+2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 3    {H,Cs,Os,Ss}  0 {1,S}
 4    {H,Cs,Os,Ss}  0 {1,S}
 """,
@@ -23943,7 +23943,7 @@ entry(
     group = 
 """
 1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO} 0 {1,S}
+2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 3    H             0 {1,S}
 4    H             0 {1,S}
 """,
@@ -24083,7 +24083,7 @@ entry(
     group = 
 """
 1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO} 0 {1,S}
+2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 3    Cs            0 {1,S}
 4    H             0 {1,S}
 """,
@@ -24223,7 +24223,7 @@ entry(
     group = 
 """
 1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO} 0 {1,S}
+2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 3    Os            0 {1,S}
 4    H             0 {1,S}
 """,
@@ -24246,7 +24246,7 @@ entry(
     group = 
 """
 1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO} 0 {1,S}
+2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 3    Ss            0 {1,S}
 4    H             0 {1,S}
 """,
@@ -24269,7 +24269,7 @@ entry(
     group = 
 """
 1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO} 0 {1,S}
+2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 3    Cs            0 {1,S}
 4    Cs            0 {1,S}
 """,
@@ -24409,7 +24409,7 @@ entry(
     group = 
 """
 1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO} 0 {1,S}
+2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 3    Os            0 {1,S}
 4    Cs            0 {1,S}
 """,
@@ -24432,7 +24432,7 @@ entry(
     group = 
 """
 1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO} 0 {1,S}
+2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 3    Ss            0 {1,S}
 4    Cs            0 {1,S}
 """,
@@ -24455,7 +24455,7 @@ entry(
     group = 
 """
 1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO} 0 {1,S}
+2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 3    Os            0 {1,S}
 4    Os            0 {1,S}
 """,
@@ -24478,7 +24478,7 @@ entry(
     group = 
 """
 1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO} 0 {1,S}
+2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 3    Os            0 {1,S}
 4    Ss            0 {1,S}
 """,
@@ -24501,7 +24501,7 @@ entry(
     group = 
 """
 1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO} 0 {1,S}
+2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 3    Ss            0 {1,S}
 4    Ss            0 {1,S}
 """,
@@ -24524,8 +24524,8 @@ entry(
     group = 
 """
 1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO} 0 {1,S}
-3    {Cd,Ct,Cb,CO} 0 {1,S}
+2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 4    {H,Cs,Os,Ss}  0 {1,S}
 """,
     kinetics = None,
@@ -24547,8 +24547,8 @@ entry(
     group = 
 """
 1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO} 0 {1,S}
-3    {Cd,Ct,Cb,CO} 0 {1,S}
+2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 4    H             0 {1,S}
 """,
     kinetics = None,
@@ -24927,8 +24927,8 @@ entry(
     group = 
 """
 1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO} 0 {1,S}
-3    {Cd,Ct,Cb,CO} 0 {1,S}
+2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 4    Cs            0 {1,S}
 """,
     kinetics = None,
@@ -25307,8 +25307,8 @@ entry(
     group = 
 """
 1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO} 0 {1,S}
-3    {Cd,Ct,Cb,CO} 0 {1,S}
+2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 4    Os            0 {1,S}
 """,
     kinetics = None,
@@ -25330,8 +25330,8 @@ entry(
     group = 
 """
 1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO} 0 {1,S}
-3    {Cd,Ct,Cb,CO} 0 {1,S}
+2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 4    Ss            0 {1,S}
 """,
     kinetics = None,
@@ -25353,9 +25353,9 @@ entry(
     group = 
 """
 1 *3 C             1 {2,S} {3,S} {4,S}
-2    {Cd,Ct,Cb,CO} 0 {1,S}
-3    {Cd,Ct,Cb,CO} 0 {1,S}
-4    {Cd,Ct,Cb,CO} 0 {1,S}
+2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 """,
     kinetics = None,
     reference = None,
@@ -25637,8 +25637,8 @@ u"""
 
 entry(
     index = 1025,
-    label = "O_rad",
-    group = "OR{O_pri_rad, O_sec_rad, O2b}",
+    label = "OJ",
+    group = "OR{OJ_pri, OJ_sec, O2b}",
     kinetics = None,
     reference = None,
     referenceType = "",
@@ -25655,7 +25655,7 @@ u"""
 
 entry(
     index = 1026,
-    label = "O_pri_rad",
+    label = "OJ_pri",
     group = 
 """
 1 *3 O 1 {2,S}
@@ -25677,7 +25677,7 @@ u"""
 
 entry(
     index = 1027,
-    label = "O_sec_rad",
+    label = "OJ_sec",
     group = 
 """
 1 *3 O   1 {2,S}
@@ -25699,11 +25699,11 @@ u"""
 
 entry(
     index = 1028,
-    label = "O_rad/NonDe",
+    label = "OJ-NonDe",
     group = 
 """
 1 *3 O          1 {2,S}
-2    {Cs,Os,Ss} 0 {1,S}
+2    {Cs,Os,Ss,Ns} 0 {1,S}
 """,
     kinetics = None,
     reference = None,
@@ -25721,7 +25721,7 @@ u"""
 
 entry(
     index = 1029,
-    label = "O_rad/NonDeC",
+    label = "OJ-Cs",
     group = 
 """
 1 *3 O  1 {2,S}
@@ -25743,7 +25743,7 @@ u"""
 
 entry(
     index = 1030,
-    label = "O_rad/NonDeO",
+    label = "OJ-Os",
     group = 
 """
 1 *3 O 1 {2,S}
@@ -25765,11 +25765,11 @@ u"""
 
 entry(
     index = 1031,
-    label = "O_rad/OneDe",
+    label = "OJ-OneDe",
     group = 
 """
 1 *3 O             1 {2,S}
-2    {Cd,Ct,Cb,CO} 0 {1,S}
+2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 """,
     kinetics = None,
     reference = None,
@@ -26003,7 +26003,7 @@ entry(
     group = 
 """
 1 *3 Ss            1 {2,S}
-2    {Cd,Ct,Cb,CO} 0 {1,S}
+2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
 """,
     kinetics = None,
     reference = None,
@@ -26122,6 +26122,1954 @@ u"""
 """,
     history = [
         ("Mon Feb 10 21:39:02 2014","Connie Gao <connieg@mit.edu>","action","""Connie Gao <connieg@mit.edu> added this entry by importing the old RMG database."""),
+    ],
+)
+
+entry(
+    index = 300,
+    label = "Ct_Nt",
+    group = 
+"""
+1 *1 Ct        0 {2,T}
+2 *2 {N3t,N5t} 0 {1,T}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 301,
+    label = "Ct_N3t",
+    group = 
+"""
+1 *1 Ct  0 {2,T}
+2 *2 N3t 0 {1,T}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 302,
+    label = "Ct_N5t",
+    group = 
+"""
+1 *1 Ct  0 {2,T}
+2 *2 N5t 0 {1,T}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 303,
+    label = "Ct-H_N3t",
+    group = 
+"""
+1 *1 Ct  0 {2,T} {3,S}
+2 *2 N3t 0 {1,T}
+3    H   0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 304,
+    label = "Ct-NonDe_N3t",
+    group = 
+"""
+1 *1 Ct          0 {2,T} {3,S}
+2 *2 N3t         0 {1,T}
+3    {Cs,Ns,Os,Ss} 0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 305,
+    label = "Ct-OneDe_N3t",
+    group = 
+"""
+1 *1 Ct                    0 {2,T} {3,S}
+2 *2 N3t                   0 {1,T}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 306,
+    label = "Cds_Nd",
+    group = 
+"""
+1 *1 Cd 0 {2,D}
+2 *2 N  0 {1,D}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 307,
+    label = "Cds_N3d",
+    group = 
+"""
+1 *1 Cd  0 {2,D}
+2 *2 N3d 0 {1,D}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 308,
+    label = "Cds-HH_N3d",
+    group = 
+"""
+1 *1 Cd  0 {2,D} {3,S} {4,S}
+2 *2 N3d 0 {1,D}
+3    H   0 {1,S}
+4    H   0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 309,
+    label = "Cds-NonDeH_N3d",
+    group = 
+"""
+1 *1 Cd  0 {2,D} {3,S} {4,S}
+2 *2 N3d 0 {1,D}
+3    H   0 {1,S}
+4    {Cs,Os,Ns,Ss} 0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+
+entry(
+    index = 310,
+    label = "Cds-NonDe2_N3d",
+    group =
+"""
+1 *1 Cd  0 {2,D} {3,S} {4,S}
+2 *2 N3d 0 {1,D}
+3    {Cs,Os,Ns,Ss}   0 {1,S}
+4    {Cs,Os,Ns,Ss} 0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc =
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 311,
+    label = "Od_Nd",
+    group = 
+"""
+1 *1 Od 0 {2,D}
+2 *2 N  0 {1,D}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 312,
+    label = "Od_N3d",
+    group = 
+"""
+1 *1 Od  0 {2,D}
+2 *2 N3d 0 {1,D}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 313,
+    label = "Od_N5d",
+    group = 
+"""
+1 *1 Od  0 {2,D}
+2 *2 N5d 0 {1,D}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 314,
+    label = "Nd_R",
+    group = "OR{N3d_R, N5d_R}",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 316,
+    label = "N3d_R",
+    group = 
+"""
+1 *1 N3d 0 {2,D}
+2 *2 R!H 0 {1,D}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 317,
+    label = "N3d_Cd",
+    group = 
+"""
+1 *1 N3d      0 {2,D}
+2 *2 {Cd,Cdd} 0 {1,D}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 318,
+    label = "N3d_Cds",
+    group = 
+"""
+1 *1 N3d 0 {2,D}
+2 *2 Cd  0 {1,D} {3,S} {4,S}
+3    R   0 {2,S}
+4    R   0 {2,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 319,
+    label = "N3d-H_Cds",
+    group = 
+"""
+1 *1 N3d 0 {2,D} {5,S}
+2 *2 Cd  0 {1,D} {3,S} {4,S}
+3    R   0 {2,S}
+4    R   0 {2,S}
+5    H   0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 320,
+    label = "N3d-H_Cds-HH",
+    group = 
+"""
+1 *1 N3d 0 {2,D} {5,S}
+2 *2 Cd  0 {1,D} {3,S} {4,S}
+3    H   0 {2,S}
+4    H   0 {2,S}
+5    H   0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 321,
+    label = "N3d-H_Cds-NonDeH",
+    group = 
+"""
+1 *1 N3d 0 {2,D} {5,S}
+2 *2 Cd  0 {1,D} {3,S} {4,S}
+3    {Cs,Os,Ss,Ns} 0 {2,S}
+4    H   0 {2,S}
+5    H   0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 322,
+    label = "N3d-H_Cds-NonDe2",
+    group = 
+"""
+1 *1 N3d 0 {2,D} {5,S}
+2 *2 Cd  0 {1,D} {3,S} {4,S}
+3    {Cs,Os,Ss,Ns} 0 {2,S}
+4    {Cs,Os,Ss,Ns} 0 {2,S}
+5    H   0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 323,
+    label = "N3d-NonDe_Cds",
+    group = 
+"""
+1 *1 N3d         0 {2,D} {5,S}
+2 *2 Cd          0 {1,D} {3,S} {4,S}
+3    R!H         0 {2,S}
+4    R!H         0 {2,S}
+5    {Cs,Ns,Os,Ss} 0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 324,
+    label = "N3d-OneDe_Cds",
+    group = 
+"""
+1 *1 N3d                   0 {2,D} {5,S}
+2 *2 Cd                    0 {1,D} {3,S} {4,S}
+3    R!H                   0 {2,S}
+4    R!H                   0 {2,S}
+5    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 325,
+    label = "N3d_Cdd",
+    group = 
+"""
+1 *1 N3d 0 {2,D}
+2 *2 Cdd 0 {1,D}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 326,
+    label = "N3d_Od",
+    group = 
+"""
+1 *1 N3d 0 {2,D}
+2 *2 Od  0 {1,D}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 327,
+    label = "N3d-H_Od",
+    group = 
+"""
+1 *1 N3d 0 {2,D} {3,S}
+2 *2 Od  0 {1,D}
+3    H   0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 328,
+    label = "N3d-NonDe_Od",
+    group = 
+"""
+1 *1 N3d         0 {2,D} {3,S}
+2 *2 Od          0 {1,D}
+3    {Cs,N3s,Os,Ss} 0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 329,
+    label = "N3d-OneDe_Od",
+    group = 
+"""
+1 *1 N3d                   0 {2,D} {3,S}
+2 *2 Od                    0 {1,D}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 330,
+    label = "N3d_Nd",
+    group = 
+"""
+1 *1 N3d 0 {2,D}
+2 *2 N   0 {1,D}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 330,
+    label = "N3d_N3d",
+    group = 
+"""
+1 *1 N3d 0 {2,D}
+2 *2 N3d 0 {1,D}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 331,
+    label = "N3d-H_N3d",
+    group = 
+"""
+1 *1 N3d 0 {2,D} {3,S}
+2 *2 N3d 0 {1,D}
+3    H   0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 332,
+    label = "N3d-H_N3d-H",
+    group = 
+"""
+1 *1 N3d 0 {2,D} {3,S}
+2 *2 N3d 0 {1,D} {4,S}
+3    H   0 {1,S}
+4    H   0 {2,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 333,
+    label = "N3d-H_N3d-NonDe",
+    group = 
+"""
+1 *1 N3d         0 {2,D} {3,S}
+2 *2 N3d         0 {1,D} {4,S}
+3    H           0 {1,S}
+4    {Cs,N3s,Os,Ss} 0 {2,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 334,
+    label = "N3d-H_N3d-OneDe",
+    group = 
+"""
+1 *1 N3d                   0 {2,D} {3,S}
+2 *2 N3d                   0 {1,D} {4,S}
+3    H                     0 {1,S}
+4    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 335,
+    label = "N3d-NonDe_N3d",
+    group = 
+"""
+1 *1 N3d         0 {2,D} {3,S}
+2 *2 N3d         0 {1,D}
+3    {Cs,N3s,Os,Ss} 0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 336,
+    label = "N3d-OneDe_N3d",
+    group = 
+"""
+1 *1 N3d                   0 {2,D} {3,S}
+2 *2 N3d                   0 {1,D}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 337,
+    label = "N3d_N5d",
+    group = 
+"""
+1 *1 N3d       0 {2,D}
+2 *2 {N5d,N5t} 0 {1,D}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 338,
+    label = "N3t_R",
+    group = 
+"""
+1 *1 N3t 0 {2,T}
+2 *2 R!H 0 {1,T}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 339,
+    label = "N3t_Ct",
+    group = 
+"""
+1 *1 N3t 0 {2,T}
+2 *2 Ct  0 {1,T}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 339,
+    label = "N3t_Ct-H",
+    group = 
+"""
+1 *1 N3t 0 {2,T}
+2 *2 Ct  0 {1,T} {3,S}
+3    H   0 {2,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 340,
+    label = "N3t_Ct-NonDe",
+    group = 
+"""
+1 *1 N3t         0 {2,T}
+2 *2 Ct          0 {1,T} {3,S}
+3    {Cs,Ns,Os,Ss} 0 {2,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 341,
+    label = "N3t_Ct-OneDe",
+    group = 
+"""
+1 *1 N3t                   0 {2,T}
+2 *2 Ct                    0 {1,T} {3,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {2,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 342,
+    label = "N3t_N3t",
+    group = 
+"""
+1 *1 N3t 0 {2,T}
+2 *2 N3t 0 {1,T}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 343,
+    label = "N5t_R",
+    group = 
+"""
+1 *1 N5t 0 {2,T}
+2 *2 R   0 {1,T}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 344,
+    label = "Y_1centertrirad",
+    group = "OR{N_atom_quartet, N_atom_doublet, CH_quartet, CH_doublet}",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 345,
+    label = "N3_atom_quartet",
+    group = 
+"""
+1 *3 N3s 3
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 346,
+    label = "CH_quartet",
+    group = 
+"""
+1 *3 Cs 3 {2,S}
+2    H  0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 350,
+    label = "Y_1centerbirad",
+    group = 
+"""
+1 *3 R!H 2
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 351,
+    label = "CO_birad",
+    group = 
+"""
+1 *3 C  2 {2,D}
+2    Od 0 {1,D}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 354,
+    label = "NH_triplet",
+    group = 
+"""
+1 *3 N3s 2T {2,S}
+2    H   0  {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 355,
+    label = "CtJ_Ct",
+    group = 
+"""
+1 *3 Ct 1 {2,T}
+2    Ct 0 {1,T}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 356,
+    label = "CtJ_N3t",
+    group = 
+"""
+1 *3 Ct  1 {2,T}
+2    N3t 0 {1,T}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 357,
+    label = "OJ-Ns",
+    group = 
+"""
+1 *3 O   1 {2,S}
+2    Ns  0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 358,
+    label = "OJ-OneDe",
+    group = 
+"""
+1 *3 O                     1 {2,S}
+2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 359,
+    label = "OJ-OneDeN",
+    group = 
+"""
+1 *3 O         1 {2,S}
+2    {N3d,N5d} 0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 360,
+    label = "OJ-NO",
+    group = 
+"""
+1 *3 O         1 {2,S}
+2    {N3d,N5d} 0 {1,S} {3,D}
+3    Od        0 {2,D}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 361,
+    label = "CsJ-NsHH",
+    group = 
+"""
+1 *3 C 1 {2,S} {3,S} {4,S}
+2    H 0 {1,S}
+3    H 0 {1,S}
+4    Ns 0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 362,
+    label = "CsJ-NsCsH",
+    group = 
+"""
+1 *3 C   1 {2,S} {3,S} {4,S}
+2    H   0 {1,S}
+3    Ns  0 {1,S}
+4    Cs  0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 363,
+    label = "CsJ-OneDeNsH",
+    group = 
+"""
+1 *3 C                        1 {2,S} {3,S} {4,S}
+2    H                        0 {1,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+4    Ns                       0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 394,
+    label = "CsJ-OneDeNsCs",
+    group =
+"""
+1 *3 C                        1 {2,S} {3,S} {4,S}
+2    Cs                        0 {1,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+4    Ns                       0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc =
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 395,
+    label = "NJ",
+    group = "OR{N5J, N3J}",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc =
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 364,
+    label = "N3J",
+    group = 
+"""
+1 *3 {N3s,N3d} 1
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 365,
+    label = "N3sJ",
+    group = 
+"""
+1 *3 N3s 1
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 366,
+    label = "NH2J",
+    group = 
+"""
+1 *3 N3s 1 {2,S} {3,S}
+2    H   0 {1,S}
+3    H   0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 367,
+    label = "N3sJ-NonDeH",
+    group = 
+"""
+1 *3 N3s 1 {2,S} {3,S}
+2    {Os,Ss,Ns,Cs} 0 {1,S}
+3    H   0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 369,
+    label = "N3sJ-CsH",
+    group = 
+"""
+1 *3 N3s 1 {2,S} {3,S}
+2    Cs  0 {1,S}
+3    H   0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 370,
+    label = "N3sJ-OsH",
+    group = 
+"""
+1 *3 N3s 1 {2,S} {3,S}
+2    Os  0 {1,S}
+3    H   0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 371,
+    label = "N3sJ-NsH",
+    group = 
+"""
+1 *3 N3s 1 {2,S} {3,S}
+2    Ns  0 {1,S}
+3    H   0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 372,
+    label = "N3sJ-OneDeH",
+    group = 
+"""
+1 *3 N3s                      1 {2,S} {3,S}
+2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+3    H                        0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 373,
+    label = "N3sJ-NonDe2",
+    group = 
+"""
+1 *3 N3s 1 {2,S} {3,S}
+2    {Os,Cs,Ns,Ss} 0 {1,S}
+3    {Os,Cs,Ns,Ss} 0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 374,
+    label = "N3sJ-OneDeH",
+    group = 
+"""
+1 *3 N3s                      1 {2,S} {3,S}
+2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+3    H 		              0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 375,
+    label = "N3sJ-OneDeCs",
+    group =
+"""
+1 *3 N3s                      1 {2,S} {3,S}
+2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+3    Cs                        0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc =
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 376,
+    label = "N3sJ-TwoDe",
+    group = 
+"""
+1 *3 N3s                      1 {2,S} {3,S}
+2    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+3    {Cd,Ct,Cb,CO,N3d,N5d} 0 {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 377,
+    label = "N3dJ",
+    group = 
+"""
+1 *3 N3d 1
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 378,
+    label = "N3dJ_C",
+    group = 
+"""
+1 *3 N3d 1 {2,D}
+2    C  0 {1,D}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 379,
+    label = "N3dJ_O",
+    group = 
+"""
+1 *3 N3d 1 {2,D}
+2    Od  0 {1,D}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 380,
+    label = "N3dJ_N",
+    group = 
+"""
+1 *3 N3d 1 {2,D}
+2    N   0 {1,D}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 381,
+    label = "N5J",
+    group = 
+"""
+1 *3 {N5d,N5dd} 1
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 382,
+    label = "N5dJ",
+    group = 
+"""
+1 *3 N5d 1
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+
+entry(
+    index = 383,
+    label = "C_quintet",
+    group = 
+"""
+1 *3 C 4V
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 384,
+    label = "C_triplet",
+    group = 
+"""
+1 *3 C 4T
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 385,
+    label = "C_singlet",
+    group = 
+"""
+1 *3 C 4S
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 386,
+    label = "N_atom_quartet",
+    group = 
+"""
+1 *3 N 3Q
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 387,
+    label = "N_atom_doublet",
+    group = 
+"""
+1 *3 N 3D
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 388,
+    label = "CH_quartet",
+    group = 
+"""
+1 *3 C 3Q {2,S}
+2    H 0  {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 389,
+    label = "CH_doublet",
+    group = 
+"""
+1 *3 C 3D {2,S}
+2    H 0  {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 390,
+    label = "O_atom_singlet",
+    group = 
+"""
+1 *3 O 2S
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 391,
+    label = "CH2_singlet",
+    group = 
+"""
+1 *3 C 2S {2,S} {3,S}
+2    H 0  {1,S}
+3    H 0  {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 392,
+    label = "NH_singlet",
+    group = 
+"""
+1 *3 N 2S {2,S}
+2    H 0  {1,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
+    ],
+)
+
+entry(
+    index = 393,
+    label = "Y_1centerquadrad",
+    group = "OR{C_quintet, C_triplet, C_singlet}",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Mon Nov  4 10:25:25 2013","Beat Buesser <bbuesser@mit.edu>","action","""Beat Buesser <bbuesser@mit.edu> created this value."""),
     ],
 )
 
@@ -26289,6 +28237,11 @@ L1: R_R
                 L5: Cds-CdCd_Sd
                 L5: Cds-CdC=S_Sd
                 L5: Cds-C=SC=S_Sd
+        L3: Cds_Nd
+	    L4: Cds_N3d
+                L5: Cds-HH_N3d
+                L5: Cds-NonDeH_N3d
+                L6: Cds-NonDe2_N3d
         L3: Cds_Cds
             L4: Cds-HH_Cds
                 L5: Cds-HH_Cds-HH
@@ -26998,11 +28951,53 @@ L1: R_R
                 L5: Ct-Cd_Ct-Ct
                 L5: Ct-Ct_Ct-Cd
                 L5: Ct-Cd_Ct-Cd
+        L3: Ct_Nt
+            L4: Ct_N3t
+                L5: Ct-H_N3t
+                L5: Ct-NonDe_N3t
+                L5: Ct-OneDe_N3t
+            L4: Ct_N5t
     L2: Od_R
         L3: Od_Cdd
             L4: Od_Cdd-Od
         L3: Od_Cd
             L4: Od_Cd-CsH
+        L3: Od_Nd
+            L4: Od_N3d
+            L4: Od_N5d
+    L2: Nd_R
+ 	L3: N3d_R
+	    L4: N3d_Cd
+	        L5: N3d_Cds
+		    L6: N3d-H_Cds
+			L7: N3d-H_Cds-HH
+			L7: N3d-H_Cds-NonDeH
+			L7: N3d-H_Cds-NonDe2
+		    L6: N3d-NonDe_Cds
+		L6: N3d-OneDe_Cds
+		L5: N3d_Cdd
+	    L4: N3d_Od
+	    	L5: N3d-H_Od
+	    	L5: N3d-NonDe_Od
+	    	L5: N3d-OneDe_Od
+	    L4: N3d_Nd
+		L5: N3d_N3d
+		    L6: N3d-H_N3d
+			L7: N3d-H_N3d-H
+			L7: N3d-H_N3d-NonDe
+			L7: N3d-H_N3d-OneDe
+		    L6: N3d-NonDe_N3d
+		    L6: N3d-OneDe_N3d
+		L5: N3d_N5d
+        L3: N5d_R
+    L2: Nt_R
+	L3: N3t_R
+	    L4: N3t_Ct
+	         L5: N3t_Ct-H
+	 	 L5: N3t_Ct-NonDe
+	 	 L5: N3t_Ct-OneDe
+	    L4: N3t_N3t
+	L3: N5t_R        
     L2: Sd_R
         L3: Sd_Cdd
             L4: Sd_Cdd-Sd
@@ -27045,6 +29040,8 @@ L1: YJ
     L2: CJ
         L3: CbJ
         L3: CtJ
+	    L4: CtJ_Ct
+	    L4: CtJ_N3t
         L3: C2b
         L3: C=SJ
             L4: C=SJ-H
@@ -27078,6 +29075,8 @@ L1: YJ
             L4: CsJ-SsSsH
             L4: CsJ-SsSsCs
             L4: CsJ-SsSsSs
+	    L4: CsJ-NsHH
+	    L4: CsJ-NsCsH
             L4: CsJ-OneDe
                 L5: CsJ-OneDeHH
                     L6: CsJ-CtHH
@@ -27104,6 +29103,8 @@ L1: YJ
                 L5: CsJ-OneDeOsOs
                 L5: CsJ-OneDeOsSs
                 L5: CsJ-OneDeSsSs
+		L5: CsJ-OneDeNsH
+		L5: CsJ-OneDeNsCs
             L4: CsJ-TwoDe
                 L5: CsJ-TwoDeH
                     L6: CsJ-CtCtH
@@ -27151,18 +29152,17 @@ L1: YJ
             L4: CdsJ-Ss
             L4: CdsJ-Cd
             L4: CdsJ-C=S
-    L2: O_rad
-        L3: O_pri_rad
-        L3: O_sec_rad
-            L4: O_rad/NonDe
-            L4: O_rad/NonDeC
-            L4: O_rad/NonDeO
-            L4: O_rad/OneDe
+    L2: OJ
+        L3: OJ_pri
+        L3: OJ_sec
+            L4: OJ-NonDe
+            	L5: OJ-Cs
+            	L5: OJ-Os
+            	L5: OJ-Ns
+            L4: OJ-OneDe
+                L5: OJ-OneDeN
+                    L6: OJ-NO
         L3: O2b
-    L2: Y_1centerbirad
-        L3: O_atom_triplet
-        L3: SJJ
-        L3: CH2_triplet
     L2: SJ
         L3: SsJ
             L4: SsJ-H
@@ -27174,23 +29174,40 @@ L1: YJ
                 L5: SsJ-CO
                 L5: SsJ-Cd
                 L5: SsJ-C=S
+    L2: NJ
+	L3: N3J
+ 	    L4: N3sJ
+ 		L5: NH2J
+ 		L5: N3sJ-NonDeH
+ 			L7: N3sJ-CsH
+ 			L7: N3sJ-OsH
+ 			L7: N3sJ-NsH
+ 	    	L5: N3sJ-NonDe2
+		L5: N3sJ-OneDeH
+		L5: N3sJ-OneDeCs
+		L5: N3sJ-TwoDe	
+ 	    L4: N3dJ
+ 		L5: N3dJ_C
+ 		L5: N3dJ_O
+ 		L5: N3dJ_N
+	L3: N5J
+ 	    L4: N5dJ
+    L2: Y_1centerbirad
+        L3: O_atom_triplet
+        L3: SJJ
+        L3: CH2_triplet
+        L3: CO_birad
+        L3: NH_triplet
+    L2: Y_1centertrirad
+        L3: N_atom_quartet
+        L3: N_atom_doublet
+        L3: CH_quartet
+        L3: CH_doublet
+    L2: Y_1centerquadrad
+        L3: C_quintet
+        L3: C_triplet
+        L3: C_singlet
 """
-)
-
-forbidden(
-    label = "O2_birad",
-    group = 
-"""
-1 *3 O 1 {2,S}
-2    O 1 {1,S}
-""",
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-    history = [
-    ],
 )
 
 forbidden(
